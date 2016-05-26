@@ -13,7 +13,10 @@ var app = angular.module('myApp',['ngRoute']);
                 templateUrl:'source/tmp/cart.html',
                 controller:'CartController'
             })
-            .when('/detail',{templateUrl:'source/tmp/detail.html'})
+            .when('/detail',{
+                templateUrl:'source/tmp/detail.html',
+                controller:'DetailController'
+            })
             .when('/search',{templateUrl:'source/tmp/search.html'})
             .when('/order',{templateUrl:'source/tmp/order.html'})
             .when('/confirm_order',{templateUrl:'source/tmp/confirm_order.html'})
