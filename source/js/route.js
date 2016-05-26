@@ -3,21 +3,21 @@ var app = angular.module('myApp',['ngRoute']);
     app.config(['$routeProvider', function($routeProvider){
         $routeProvider
             .when('/',{
-                templateUrl:'index.html',
+                templateUrl:'source/tmp/index.html',
             })
             .when('/login',{
-                templateUrl:'login.html'
+                templateUrl:'source/tmp/login.html'
             })
-            .when('/register',{templateUrl:'register.html'})
+            .when('/register',{templateUrl:'source/tmp/register.html'})
             .when('/cart',{
-                templateUrl:'cart.html',
+                templateUrl:'source/tmp/cart.html',
                 controller:'CartController'
             })
-            .when('/detail',{templateUrl:'detail.html'})
-            .when('/search',{templateUrl:'search.html'})
-            .when('/order',{templateUrl:'order.html'})
-            .when('/confirm_order',{templateUrl:'confirm_order.html'})
-            .when('/address',{templateUrl:'address.html'})
-            .when('/user',{templateUrl:'user.html'})
+            .when('/detail',{templateUrl:'source/tmp/detail.html'})
+            .when('/search',{templateUrl:'source/tmp/search.html'})
+            .when('/order',{templateUrl:'source/tmp/order.html'})
+            .when('/confirm_order',{templateUrl:'source/tmp/confirm_order.html'})
+            .when('/address',{templateUrl:'source/tmp/address.html'})
+            .when('/user',{templateUrl:'source/tmp/user.html'})
             .otherwise({redirectTo:'/'});
     }]);

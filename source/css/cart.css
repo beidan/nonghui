@@ -174,7 +174,6 @@ nav .userIcon:before{content:"U";}
 .cart dd .goodsInfor h2 a{display:block;color:grey;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;float:left;}
 .cart dd .goodsInfor h2 span{float:right;color:#999;}
 .cart dd .goodsInfor h2 span:before{content:"x";}
-.cart dd .goodsInfor .numberWidget{display:none;}
 .cart dd .goodsInfor .numberWidget input[type="button"]{width:.5rem;height:.5rem;border-radius:50%;background:none;border:1px #d2d2d2 solid;color:grey;outline:none;}
 .cart dd .goodsInfor .priceArea{margin:.15rem 0;}
 .cart dd .goodsInfor .priceArea strong{color:#6aab60;font-size:.35rem;margin-right:.15rem;}
@@ -182,9 +181,20 @@ nav .userIcon:before{content:"U";}
 .cart dd .goodsInfor .priceArea del{color:grey;}
 .cart dd .goodsInfor .priceArea del:before{content:"￥";}
 .cart dd .goodsInfor .numberWidget input[type="text"]{width:1rem;text-align:center;background:none;border:none;}
-.cart dd .delBtn{display:none;position:absolute;right:0;top:0;width:1rem;padding:.43rem 0;background:#31bd80;color:white;text-align:center;}
-/*confirm order*/
+.cart dd .delBtn{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 1rem;
+    padding: .2rem 0;
+    background: #31bd80;
+    color: white;
+    text-align: center;
+}
 .confirmAddr{background:#333;padding:.12rem 3%;position:relative;overflow:hidden;}
+.numberChange{
+    width:50px;
+}
 .confirmAddr p,.confirmAddr address{margin:.12rem 0;}
 .confirmAddr p span{color:white;margin-right:.15rem;}
 .confirmAddr p span:last-child{margin:0;}
@@ -270,6 +280,9 @@ nav .userIcon:before{content:"U";}
 .orderList li dd:last-child a{display:inline-block;width:2rem;height:.75rem;text-align:center;line-height:.75rem;margin-left:.15rem;font-size:.32rem;border-radius:2px;}
 .orderList li dd:last-child .order_delBtn{background:white;border:1px #333 solid;color:#333;}
 .orderList li dd:last-child .order_payBtn{background:#0c0;border:1px #0c0 solid;color:white;}
+.delBtn p{
+    text-align: center;
+}
 .orderList li dd h2{float:left;width:60%;margin:0;color:#666;}
 .orderList li dd strong{float:right;display:block;text-align:right;font-weight:normal;}
 .orderList li dd strong em{font-style:normal;display:block;color:#666;}
