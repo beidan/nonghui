@@ -4,6 +4,7 @@ var app = angular.module('myApp',['ngRoute']);
         $routeProvider
             .when('/',{
                 templateUrl:'source/tmp/index.html',
+                controller:'IndexController'
             })
             .when('/login',{
                 templateUrl:'source/tmp/login.html'
@@ -22,5 +23,7 @@ var app = angular.module('myApp',['ngRoute']);
             .when('/confirm_order',{templateUrl:'source/tmp/confirm_order.html'})
             .when('/address',{templateUrl:'source/tmp/address.html'})
             .when('/user',{templateUrl:'source/tmp/user.html'})
-            .otherwise({redirectTo:'/'});
+            .otherwise({
+                redirectTo:'/'
+            });
     }]);

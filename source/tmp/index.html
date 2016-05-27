@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="source/css/index.css" />
+
 <div id="slide">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -64,174 +65,71 @@
   </a>
  </li>
 </ul>
-<dl class="tab_proList">
+<dl class="tab_proList"  ng-controller="IndexController">
  <dt>
-  <a>热销</a>
-  <a>新品</a>
-  <a>打折</a>
+  <a ng-click="toggleList($event)">热销</a>
+  <a ng-click="toggleList($event)">新品</a>
+  <a ng-click="toggleList($event)">打折</a>
  </dt>
- <dd>
+ <dd ng-repeat="item in hot" ng-show="hotShow">
   <ul>
    <li>
     <a href="#" class="goodsPic">
-     <img src="source/img/index/goods001.jpg"/>
+     <img ng-src="{{item.imgsrc}}"/>
     </a>
     <div class="goodsInfor">
      <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
+      <a href="#">{{item.title}}</a>
      </h2>
      <p>
-      <del>5.90</del>
+      <del>{{item.origPrice}}</del>
      </p>
      <p>
-      <strong class="price">3.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods002.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">红萝卜3斤装</a>
-     </h2>
-     <p>
-      <del>12.90</del>
-     </p>
-     <p>
-      <strong class="price">8.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods003.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">西红柿5斤装</a>
-     </h2>
-     <p>
-      <del>9.90</del>
-     </p>
-     <p>
-      <strong class="price">6.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li>
-  </ul>
- </dd>
- <dd>
-  <ul>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods004.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
-     </h2>
-     <p>
-      <del>5.90</del>
-     </p>
-     <p>
-      <strong class="price">3.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods008.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
-     </h2>
-     <p>
-      <del>5.90</del>
-     </p>
-     <p>
-      <strong class="price">3.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods009.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
-     </h2>
-     <p>
-      <del>5.90</del>
-     </p>
-     <p>
-      <strong class="price">3.90</strong>
+      <strong class="price">{{item.price}}</strong>
      </p>
      <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
     </div>
    </li>
  </dd>
- <dd>
+ <dd ng-repeat="item in new"  ng-show="newShow">
   <ul>
    <li>
     <a href="#" class="goodsPic">
-     <img src="source/img/index/goods005.jpg"/>
+     <img ng-src="{{item.imgsrc}}"/>
     </a>
     <div class="goodsInfor">
      <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
+      <a href="#">{{item.title}}</a>
      </h2>
      <p>
-      <del>5.90</del>
+      <del>{{item.origPrice}}</del>
      </p>
      <p>
-      <strong class="price">3.90</strong>
+      <strong class="price">{{item.price}}</strong>
      </p>
      <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
     </div>
    </li>
+ </dd>
+ <dd ng-repeat="item in sale"  ng-show="saleShow">
+  <ul>
    <li>
     <a href="#" class="goodsPic">
-     <img src="source/img/index/goods006.jpg"/>
+     <img ng-src="{{item.imgsrc}}"/>
     </a>
     <div class="goodsInfor">
      <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
+      <a href="#">{{item.title}}</a>
      </h2>
      <p>
-      <del>5.90</del>
+      <del>{{item.origPrice}}</del>
      </p>
      <p>
-      <strong class="price">3.90</strong>
+      <strong class="price">{{item.price}}</strong>
      </p>
      <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
     </div>
    </li>
-   <li>
-    <a href="#" class="goodsPic">
-     <img src="source/img/index/goods007.jpg"/>
-    </a>
-    <div class="goodsInfor">
-     <h2>
-      <a href="#">新鲜生菜两斤装特惠</a>
-     </h2>
-     <p>
-      <del>5.90</del>
-     </p>
-     <p>
-      <strong class="price">3.90</strong>
-     </p>
-     <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-    </div>
-   </li> 
  </dd>
 </dl>
 <div class="hoverCart">

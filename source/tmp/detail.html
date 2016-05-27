@@ -21,102 +21,54 @@
     <div class="swiper-pagination"></div>
 </div>
 <div class=" width100 bg_white" style="padding:10px;">
-    <h4>纯正天然健康果蔬系列之有机菠菜</h4>
+    <h4>{{detail.title}}</h4>
         <span class="pull-right">
             <div class="btn-group" role="group" aria-label="...">
                 <button type="button" class="btn btn-default"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                <button type="button" class="btn btn-default disabled">5</button>
+                <button type="button" class="btn btn-default disabled">{{detail.num}}</button>
                 <button type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
         </span>
-    <p class=" color_gray font16"><span class="color_orange font20">¥136</span>&nbsp;&nbsp;&nbsp;&nbsp;<del>¥389</del></p>
+    <p class=" color_gray font16"><span class="color_orange font20">{{detail.price}}</span>&nbsp;&nbsp;&nbsp;&nbsp;<del>{{detail.PrePrice}}</del></p>
     <div class="height10"></div>
     <div class=" width100 bg_white border_top hang32">
         <span class=" font16">商品规格</span>
-        <span class="pull-right">750g</span>
+        <span class="pull-right">{{detail.weigth}}</span>
     </div>
     <div class="height10"></div>
 </div>
 <div class="height10"></div>
 <div class=" width100 bg_white border_bottom" style="padding:10px;">
     <span class=" font16">商品介绍</span>
-    <span class="pull-right"><a title="收起" class=" cgreen" href="#"><i class="icon-angle-up" style="font-size:24px;"></i></a></span>
 </div>
 <div class=" width100 bg_white" style="padding:10px;">
     <div class="artic14">
-        <p>菠菜又名波斯菜、赤根菜、鹦鹉菜等，属苋科藜亚科菠
-            菜属，一年生草本植物。植物高可达1米，根圆锥状，带
-            红色，较少为白色，叶戟形至卵形，鲜绿色，全缘或有
-            少数牙齿状裂片。</p>
+        <p>{{detail.introduce}}</p>
     </div>
 </div>
 <div class="height10"></div>
 <div class=" width100 bg_white border_bottom" style="padding:10px;">
-    <span class=" font16">商品评价 (22)</span>
-        <span class="pull-right color_orange">
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star-empty"></i>
-        &nbsp;&nbsp;
-        <a title="收起" class=" cgreen" href="#"><i class="icon-angle-up" style="font-size:24px;"></i></a>
-        </span>
+    <span class=" font16">商品评价 ({{len()}})</span>
 </div>
-<div class=" width100 bg_white" style="padding:10px;">
-    <span>138****3456</span>
-        <span class="pull-right color_orange">
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star-empty"></i>
-        </span>
-    <div class="height10"></div>
-    <div class="artic14">
-        <p>还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错</p>
-    </div>
-    <span class="pull-right">2015-09-13 14:35</span><!--b-->
-    <div class="height10 border_bottom"></div>
-    <div class="height10"></div>
-    <span>138****3456</span>
-        <span class="pull-right color_orange">
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star-empty"></i>
-        </span>
-    <div class="height10"></div>
-    <div class="artic14">
-        <p>还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错</p>
-    </div>
-    <span class="pull-right">2015-09-13 14:35</span><!--b-->
-    <div class="height10 border_bottom"></div>
-    <div class="height10"></div>
-    <span>138****3456</span>
-        <span class="pull-right color_orange">
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star"></i>
-        <i class="icon-star-empty"></i>
-        </span>
-    <div class="height10"></div>
-    <div class="artic14">
-        <p>还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错</p>
-    </div>
-    <span class="pull-right">2015-09-13 14:35</span>
-    <div class="height10 border_bottom"></div>
-    <div class="height10"></div>
+<div class=" width100 bg_white" style="padding:10px;"  ng-repeat="item in comment">
+        <span>{{item.owner}}</span>
+        <div class="height10"></div>
+        <div class="artic14">
+            <p>{{item.content}}</p>
+        </div>
+        <span class="pull-right">{{item.data}}</span>
+        <div class="height10 border_bottom"></div>
+        <div class="height10"></div>
 </div>
-
 <div class="height20"></div>
 <div class="height60"></div>
 <div class=" width100 bg_white navbar-fixed-bottom" style="padding:10px;">
     <div class="row" style="width:100%; margin:0 auto;">
-        <div class="col-xs-12" style="padding-left:5px; padding-right:0px;">
+        <div class="col-xs-6" style="padding-left:5px; padding-right:0px;">
             <button class="btn btn-lg btn-success btn-group-justified" type="submit" >加入购物车</button>
+        </div>
+        <div class="col-xs-6" style="padding-left:5px; padding-right:0px;">
+            <button class="btn btn-lg btn-success btn-group-justified" type="submit" >立即购买</button>
         </div>
     </div>
 </div>

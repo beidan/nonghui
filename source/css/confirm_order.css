@@ -165,7 +165,7 @@ nav .userIcon:before{content:"U";}
 .pro_attr dd li span:after{content:"：";}
 .pro_attr dd li em{color:grey;font-style:normal;}
 /*bottom nav*/
-.btmNav{height:1rem;line-height:1rem;background:#f8f8f8;border-top:1px #f2f2f2 solid;position:fixed;bottom:0;width:100%;display:box;display:-webkit-box;display:-moz-box;}
+.btmNav{z-index: 999;height:1rem;line-height:1rem;background:#f8f8f8;border-top:1px #f2f2f2 solid;position:fixed;bottom:0;width:100%;display:box;display:-webkit-box;display:-moz-box;}
 .btmNav a{display:block;box-flex:1px;-webkit-box-flex:1;-moz-box-flex:1;text-align:center;border-right:1px #f2f2f2 solid;text-shadow:0 1px 1px white;color:#999;}
 .btmNav a:last-child{border:none;}
 /*cart*/
