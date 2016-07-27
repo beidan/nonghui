@@ -1,0 +1,16 @@
+header {
+  @include height(4rem);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #21d9a2), color-stop(1, #31bd80));
+  @include center;
+  padding: 0 10px;
+  font-size: 1.6rem;
+
+  a {
+    color: white;
+  }
+
+  .title {
+    color: white;
+    margin-right: 30px;
+  }
+}

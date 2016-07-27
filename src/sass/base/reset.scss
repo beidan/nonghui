@@ -1,0 +1,213 @@
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 125% !important;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 150% !important;
+  }
+}
+
+@media only screen and (min-width: 1242px) {
+  html {
+    font-size: 187.5% !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "microsoft yahei";
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+a{
+  &:active{
+    outline: 0
+  }
+  &:hover{
+    outline: 0
+  }
+}
+
+button, input, optgroup, select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td, th {
+  padding: 0
+}
+
+img {
+  vertical-align: middle;
+  border: 0
+}
+
+@-ms-viewport {
+  width: device-width
+}
+
+html {
+  font-size: 50px;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden
+}
+
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1
+}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+  font-weight: 400;
+  line-height: 1
+}
+//
+//.h1, .h2, .h3, h1, h2, h3 {
+//  margin-top: 1.4rem;
+//  margin-bottom: .7rem
+//}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small {
+  font-size: 65%
+}
+
+//.h4, .h5, .h6, h4, h5, h6 {
+//  margin-top: .7rem;
+//  margin-bottom: .7rem
+//}
+
+.h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+  font-size: 75%
+}
+
+.h1, h1 {
+  font-size: 2.2rem
+}
+
+.h2, h2 {
+  font-size: 2.0rem
+}
+
+.h3, h3 {
+  font-size: 1.8rem
+}
+
+.h4, h4 {
+  font-size: 1.6rem
+}
+
+.h5, h5 {
+  font-size: 1.4rem
+}
+
+.h6, h6 {
+
+  font-size: 1.2rem
+}
+
+h6 {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
+a {
+  color: #06c1ae;
+  text-decoration: none;
+  outline: 0
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px
+}
+
+a.react, label.react {
+  display: block;
+  color: inherit;
+  height: 100%
+}
+
+a.react.react-active, a.react:active, label.react:active {
+  background: rgba(0, 0, 0, .1)
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none
+}
+
+hr {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  border: 0;
+  border-top: 1px solid #DDD8CE
+}
+
+h6, p {
+  line-height: 1.41;
+  text-align: justify;
+  margin: -.2em 0;
+  word-break: break-all
+}
+
+small, weak {
+  color: #666
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+  line-height: normal;
+}
+
+:-moz-placeholder {
+  color: #999;
+  line-height: normal;
+}
+
+::-moz-placeholder {
+  color: #999;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: 'freshregular';
+
+  font-weight: normal;
+  font-style: normal;
+}

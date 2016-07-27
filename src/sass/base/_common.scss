@@ -1,0 +1,51 @@
+@mixin fl {
+  float: left;
+}
+
+@mixin fr {
+  float: right;
+}
+
+@mixin center {
+  text-align: center;
+
+}
+
+//定义高度
+@mixin height($height: 1.6rem) {
+  height: $height;
+  line-height: $height;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*超出显示……*/
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*清除浮动*/
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+
+
+
