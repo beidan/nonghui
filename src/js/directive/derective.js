@@ -1,11 +1,3 @@
-app.directive("footNav", function () {
-    return {
-        restrict: 'E',
-        replace: true,
-        template: '<nav><a href="#/"><p class="fa fa-home icon" aria-hidden="true"></p></i><p>首页</p></a><a href="#/detail"><p class="fa fa-bars icon" aria-hidden="true"></p><p>分类</p></a>'+
-        '<a href="#/cart"><p class="fa fa-shopping-cart icon" aria-hidden="true"></p><p>购物车</p></a><a href="#/user"><p class="fa fa-user icon" aria-hidden="true"></p><p>我的</p></a></nav>',
-    };
-});
 
 app.directive("headNav", function () {
     return {
@@ -15,4 +7,16 @@ app.directive("headNav", function () {
         '</i></a></header>',
     };
 });
+
+
+
+app.directive("footNav", function () {
+    return {
+        restrict: 'E',
+        replace: true,
+        template: '<footer><a href="#/"><p class="fa fa-home icon" aria-hidden="true"></p></i><p>首页</p></a><a href="#/asort"><p class="fa fa-bars icon" aria-hidden="true"></p><p>分类</p></a>'+
+        '<a href="#/cart"><p class="fa fa-shopping-cart icon" aria-hidden="true"></p><p>购物车</p></a><a href="#/user"><p class="fa fa-user icon" aria-hidden="true"></p><p>我的</p></a></footer>'
+    };
+});
+
 

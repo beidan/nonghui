@@ -1,0 +1,122 @@
+@import "base/common";
+@import "base/reset";
+@import "base/footer";
+
+$green: #1ba91b;
+
+.contaniner {
+  width: 100%;
+  overflow: hidden;
+  margin: .5em 0;
+
+  .assort {
+    width: 40%;
+    float: left;
+
+    ul {
+      width: 100%;
+
+      li {
+        width: 92%;
+        background-color: white;
+        border-bottom: solid 1px #c8c8c8;
+        border-right: solid 1px #c8c8c8;
+        padding: 12% 4%;
+
+        img {
+          width: 17%;
+          margin: 0 10%;
+          vertical-align: middle;
+        }
+        span {
+          font-size: 1.3865rem;
+          color: $green;
+          vertical-align: middle;
+        }
+        .active {
+          border-right: none;
+          background-color: #fff
+        }
+      }
+    }
+  }
+  .assort-cont {
+    width: 58%;
+    margin: 1%;
+    float: left;
+    img {
+      width: 100%;
+    }
+    dl {
+      width: 100%;
+      margin-top: 5%;
+      overflow: hidden;
+
+      dt {
+        font-size: 1.569rem;
+        margin-bottom: 3%;
+        background: white;
+        color: #1daa1d;
+        padding: .8rem 0.3rem;
+      }
+
+      dd {
+        width: 47%;
+        float: left;
+        margin: .1rem;
+
+        img {
+          height: 7rem;
+        }
+
+        a {
+          width: 100%;
+          display: block;
+        }
+        p {
+          text-align: center;
+          color: #666;
+          font-size: 1.169rem;
+          padding: 0.8rem .3rem;
+        }
+
+        &:nth-child(even) {
+          margin-right: 2%;
+        }
+        &:nth-child(odd) {
+          margin-left: 2%;
+        }
+      }
+    }
+  }
+}
+
+.searchArea {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+
+  input[type="text"] {
+    width: 100%;
+    padding: 1.2rem 1.3rem;
+    outline: none;
+    border: none;
+  }
+  input[type="button"] {
+    font-family: 'freshregular';
+    background: none;
+    border: none;
+    color: grey;
+    position: absolute;
+    right: 3%;
+    top: 23%;
+    outline: none;
+    font-size: .45rem;
+  }
+
+  .search {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}

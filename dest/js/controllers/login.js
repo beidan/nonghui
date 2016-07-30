@@ -1,0 +1,1 @@
+app.controller("LoginController",function(o,n,e){n.post(e.LoginUrl,{params:{phone:"18814127384",password:"eeee"}}).then(function(o){console.log(o)},function(o,n,e,r){console.log("error!")})});

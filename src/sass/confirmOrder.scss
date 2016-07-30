@@ -1,0 +1,110 @@
+@import "base/common";
+@import "base/reset";
+@import "base/header";
+
+.btmNav {
+  @include height(4rem);
+  background: #f8f8f8;
+  border-top: 1px #f2f2f2 solid;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include displayBox(box);
+
+  a {
+    display: block;
+    @include boxFlex(1);
+    text-align: center;
+    border-right: 1px #f2f2f2 solid;
+    color: white;
+    text-shadow:none;
+    border: none;
+
+
+    &:first-child{
+      background:#64ab5b;
+    }
+
+    &:last-child {
+      background:#6bc75f;
+    }
+  }
+}
+
+.confirmAddr {
+  background: #333;
+  padding: .6rem 3%;
+  position: relative;
+  overflow: hidden;
+
+  p span {
+    color: white;
+    margin-right: .5rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  address {
+    color: #f8f8f8;
+    font-style: normal;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .iconfont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    line-height: 5.5rem;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background: rgba(255, 255, 255, .15);
+    box-shadow: -2px 0 5px grey;
+    width: 3rem;
+    text-align: center;
+    @include scaleX(-1);
+  }
+
+}
+
+.confirmAddr p, .confirmAddr address {
+  margin: .6rem 0;
+}
+
+.payment {
+  background: white;
+  padding: 0 3%;
+  margin: .6rem 0;
+  dt {
+    @include height(4rem);
+    color: grey;
+    border-bottom: 1px #d2d2d2 solid;
+  }
+  dd {
+    padding: .15rem 0;
+    margin: 0;
+    @include displayBox(box);
+
+    label {
+      display: block;
+      @include boxFlex(1);
+      @include height(3rem);
+      background: #f8f8f8;
+      margin: 0 .5rem;
+      text-align: center;
+      border-radius: 2px;
+      color: #999;
+      input {
+        display: none;
+      }
+    }
+    .isTrue {
+      background: #cedfcc;
+      color: white;
+    }
+  }
+}
+

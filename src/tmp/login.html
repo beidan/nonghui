@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="src/css/login.css" />
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="src/css/login.css"/>
+
+
 <section class="formLogo">
-    <h2>Nh</h2>
+    <h2>N</h2>
 </section>
-<ul class="formarea">
+<ul class="formarea" ng-controller="LoginController">
     <li>
         <label class="lit">账号：</label>
         <input type="text" placeholder="手机号码" class="textbox"/>
@@ -19,26 +15,12 @@
     </li>
     <li class="liLink lg_liLink">
         <span><label><input type="checkbox"/>记住密码</label></span>
-        <span><a href="register.html">新用户注册</a></span>
-        <span><a href="find_pwd.html">忘记密码?</a></span>
+        <span><a href="#register">新用户注册</a></span>
+        <span><a href="#find_pwd">忘记密码?</a></span>
     </li>
     <li>
         <input type="button" value="立即登陆"/>
     </li>
 </ul>
 
-<script>
-    $(document).ready(function(){
-        $(".formarea li:last input[type='button']").click(function(){
-            alert("测试跳转效果，程序对接予以删除!");
-            location.href="index.html";
-        });
-    });
-</script>
-<script>
-    document.oncontextmenu=new Function("event.returnValue=false;");
-    document.onselectstart=new Function("event.returnValue=false;");
-</script>
 
-</body>
-</html>

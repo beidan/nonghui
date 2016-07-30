@@ -1,22 +1,39 @@
-<link href="src/css/bootstrap.css" rel="stylesheet">
-<link href="src/cssCache/detail.css" rel="stylesheet">
+<link href="src/css/detail.css" rel="stylesheet">
 
 <header>
-    <a href="javascript:history.go(-1);" class="iconfont backIcon">&#60;</a>
-    <h1>产品详情</h1>
-    <a href="#/cart" class="topCart"><span class="fa fa-shopping-cart" aria-hidden="true"></span><em>0</em></a>
+    <a href="javascript:history.go(-1);" class="fl">
+        <span class="fa fa-angle-left"></span>
+    </a>
+    <span class="title">产品详情</span>
+    <a href="#/cart" class="cart fr">
+        <span class="fa fa-shopping-cart" aria-hidden="true"></span><em>0</em>
+    </a>
 </header>
+
 <div ng-controller="DetailController" class="detailBox">
-    <div class="swiper-container">
-        <div class="swiper-wrapper" ng-repeate="item in imgs">
-            <div class="swiper-slide">
-                <div class="productphoto">
-                    <img ng-src="{{item.imagesrc}}"/>
-                </div>
+    <!--<div class="swiper-container">-->
+        <!--<div class="swiper-wrapper" ng-repeate="item in imgs">-->
+            <!--<div class="swiper-slide">-->
+                <!--<div class="productphoto">-->
+                    <!--<img ng-src="{{item.imagesrc}}"/>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="swiper-pagination"></div>-->
+    <!--</div>-->
+
+    <div id="slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in swiperImg">
+                <a href="#">
+                    <img ng-src="{{item.imgsrc}}" alt="">
+                </a>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="pagination"></div>
     </div>
+
+
     <div class="shopNum">
         <h4>{{detail.title}}</h4>
         <div class="clearfix">
@@ -45,31 +62,11 @@
             <p>{{detail.introduce}}</p>
         </div>
     </div>
-    <!--<div class="shopTitle">-->
-    <!--<span>商品评价 ({{len()}})</span>-->
-    <!--</div>-->
-    <!--<div ng-repeat="item in comment">-->
-    <!--<span>{{item.owner}}</span>-->
-    <!--<div class="artic14">-->
-    <!--<p>{{item.content}}</p>-->
-    <!--</div>-->
-    <!--<span class="fr">{{item.data}}</span>-->
-    <!--</div>-->
-    <div class="navbar-fixed-bottom">
-        <div class="row">
-            <div class="col-xs-6">
-                <button class="btn btn-lg btn-success btn-group-justified" type="submit">加入购物车</button>
-            </div>
-            <div class="col-xs-6" style="padding-left:5px; padding-right:0px;">
-                <button class="btn btn-lg btn-success btn-group-justified" type="submit">立即购买</button>
-            </div>
-        </div>
-    </div>
 </div>
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    });
-</script>
+<aside class="btmNav">
+    <a>加入购物车</a>
+    <a href="#/cart" class="order">立即购买</a>
+</aside>
+
+

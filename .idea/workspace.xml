@@ -2,105 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de56d5e-686d-4472-8af5-c421b387e3fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/loading.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/directive/derective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/lib/lazeload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/base/_common.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/base/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/base/_header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/base/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/detail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/login.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/order.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/register" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/search.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/user.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tmp/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/css/loading.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/js/controllers/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/js/lib/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/tmp/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/address.css" afterPath="$PROJECT_DIR$/src/css/address.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/cart.css" afterPath="$PROJECT_DIR$/src/css/cart.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/confirm_order.css" afterPath="$PROJECT_DIR$/src/css/confirm_order.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/detail.css" afterPath="$PROJECT_DIR$/src/css/detail.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/extend.css" afterPath="$PROJECT_DIR$/src/css/extend.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/font-awesome.css" afterPath="$PROJECT_DIR$/src/css/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/loaders.css" afterPath="$PROJECT_DIR$/src/css/loaders.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/login.css" afterPath="$PROJECT_DIR$/src/css/login.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/order.css" afterPath="$PROJECT_DIR$/src/css/order.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/register.css" afterPath="$PROJECT_DIR$/src/css/register.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/reset.css" afterPath="$PROJECT_DIR$/src/css/reset.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/search.css" afterPath="$PROJECT_DIR$/src/css/search.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/swiper.css" afterPath="$PROJECT_DIR$/src/css/swiper.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/swiper3.07.min.css" afterPath="$PROJECT_DIR$/src/css/swiper3.07.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/css/user.css" afterPath="$PROJECT_DIR$/src/css/user.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/src/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/src/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/src/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/src/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/src/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/detail/1.jpg" afterPath="$PROJECT_DIR$/src/img/detail/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/detail/3.jpg" afterPath="$PROJECT_DIR$/src/img/detail/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/detail/4.jpg" afterPath="$PROJECT_DIR$/src/img/detail/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods001.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods001.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods002.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods002.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods003.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods003.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods004.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods004.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods005.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods005.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods006.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods006.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods007.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods007.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods008.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods008.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/goods009.jpg" afterPath="$PROJECT_DIR$/src/img/index/goods009.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_01.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_03.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_06.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_07.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_07.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_10.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_11.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_14.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_14.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/menu_bg_15.png" afterPath="$PROJECT_DIR$/src/img/index/menu_bg_15.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/slide001.jpg" afterPath="$PROJECT_DIR$/src/img/index/slide001.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/index/slide002.jpg" afterPath="$PROJECT_DIR$/src/img/index/slide002.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/user/hbg.png" afterPath="$PROJECT_DIR$/src/img/user/hbg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/img/user/tx.jpg" afterPath="$PROJECT_DIR$/src/img/user/tx.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/js/controllers/cart.js" afterPath="$PROJECT_DIR$/src/js/controllers/cart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/js/controllers/detail.js" afterPath="$PROJECT_DIR$/src/js/controllers/detail.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/js/lib/swiper.min.js" afterPath="$PROJECT_DIR$/src/js/lib/swiper.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/js/route.js" afterPath="$PROJECT_DIR$/src/js/route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/address.html" afterPath="$PROJECT_DIR$/src/tmp/address.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/cart.html" afterPath="$PROJECT_DIR$/src/tmp/cart.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/confirm_order.html" afterPath="$PROJECT_DIR$/src/tmp/confirm_order.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/detail.html" afterPath="$PROJECT_DIR$/src/tmp/detail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/login.html" afterPath="$PROJECT_DIR$/src/tmp/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/order.html" afterPath="$PROJECT_DIR$/src/tmp/order.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/register.html" afterPath="$PROJECT_DIR$/src/tmp/register.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/search.html" afterPath="$PROJECT_DIR$/src/tmp/search.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/tmp/user.html" afterPath="$PROJECT_DIR$/src/tmp/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/asort.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/confirmOrder.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/swiper/swiper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/swiper/swiper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/address.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/register.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tmp/asort.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_common.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_footer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_header.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_common.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_footer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_header.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/detail.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/index.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/login.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/order.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/search.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/user.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f512377317bf3f6106a918c704e6ae2fb9e2159a/index.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/slide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/extend.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/loaders.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/loading.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/swiper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/swiper3.07.min.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/font-awesome.css" afterPath="$PROJECT_DIR$/src/lib/font-awesome/font-awesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/detail.css" afterPath="$PROJECT_DIR$/src/css/detail.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/login.css" afterPath="$PROJECT_DIR$/src/sass/confirmOrder.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/order.css" afterPath="$PROJECT_DIR$/src/sass/cart.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/search.css" afterPath="$PROJECT_DIR$/src/sass/asort.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/user.css" afterPath="$PROJECT_DIR$/src/css/confirm_order.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/common.js" afterPath="$PROJECT_DIR$/src/lib/common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/lazeload.js" afterPath="$PROJECT_DIR$/src/lib/lazeload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/swiper.min.js" afterPath="$PROJECT_DIR$/src/lib/swiper.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sass/base/reset.scss" afterPath="$PROJECT_DIR$/src/sass/base/_reset.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sass/register" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shenxianplat.iml" afterPath="$PROJECT_DIR$/.idea/shenxianplat.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/detail.min.css" afterPath="$PROJECT_DIR$/dest/css/detail.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/index.min.css" afterPath="$PROJECT_DIR$/dest/css/index.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/login.min.css" afterPath="$PROJECT_DIR$/dest/css/login.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/order.min.css" afterPath="$PROJECT_DIR$/dest/css/order.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/search.min.css" afterPath="$PROJECT_DIR$/dest/css/search.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/user.min.css" afterPath="$PROJECT_DIR$/dest/css/user.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/js/route.js" afterPath="$PROJECT_DIR$/dest/js/route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend.html" afterPath="$PROJECT_DIR$/extend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/address.css" afterPath="$PROJECT_DIR$/src/css/address.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/cart.css" afterPath="$PROJECT_DIR$/src/css/cart.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/login.css" afterPath="$PROJECT_DIR$/src/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/order.css" afterPath="$PROJECT_DIR$/src/css/order.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/register.css" afterPath="$PROJECT_DIR$/src/css/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/search.css" afterPath="$PROJECT_DIR$/src/css/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/user.css" afterPath="$PROJECT_DIR$/src/css/user.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/index.js" afterPath="$PROJECT_DIR$/src/js/controllers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/login.js" afterPath="$PROJECT_DIR$/src/js/controllers/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/directive/derective.js" afterPath="$PROJECT_DIR$/src/js/directive/derective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/route.js" afterPath="$PROJECT_DIR$/src/js/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/services.js" afterPath="$PROJECT_DIR$/src/js/services/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_common.scss" afterPath="$PROJECT_DIR$/src/sass/base/_common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_footer.scss" afterPath="$PROJECT_DIR$/src/sass/base/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_header.scss" afterPath="$PROJECT_DIR$/src/sass/base/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/detail.scss" afterPath="$PROJECT_DIR$/src/sass/detail.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/index.scss" afterPath="$PROJECT_DIR$/src/sass/index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/login.scss" afterPath="$PROJECT_DIR$/src/sass/login.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/order.scss" afterPath="$PROJECT_DIR$/src/sass/order.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/search.scss" afterPath="$PROJECT_DIR$/src/sass/search.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/user.scss" afterPath="$PROJECT_DIR$/src/sass/user.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/address.html" afterPath="$PROJECT_DIR$/src/tmp/address.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/cart.html" afterPath="$PROJECT_DIR$/src/tmp/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/confirm_order.html" afterPath="$PROJECT_DIR$/src/tmp/confirm_order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/detail.html" afterPath="$PROJECT_DIR$/src/tmp/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/index.html" afterPath="$PROJECT_DIR$/src/tmp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/login.html" afterPath="$PROJECT_DIR$/src/tmp/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/order.html" afterPath="$PROJECT_DIR$/src/tmp/order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/register.html" afterPath="$PROJECT_DIR$/src/tmp/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/search.html" afterPath="$PROJECT_DIR$/src/tmp/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/user.html" afterPath="$PROJECT_DIR$/src/tmp/user.html" />
     </list>
     <ignored path="shenxianplat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,75 +105,35 @@
     <favorites_list name="shenxianplat" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/js/controllers/detail.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/tmp/cart.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/tmp/user.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
-                  <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/tmp/login.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/js/controllers/login.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="extend.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -197,57 +143,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/order.html" />
-        <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/product.html" />
-        <option value="$PROJECT_DIR$/address.html" />
-        <option value="$PROJECT_DIR$/user.html" />
-        <option value="$PROJECT_DIR$/register.html" />
-        <option value="$PROJECT_DIR$/source/css/extend.css" />
-        <option value="$PROJECT_DIR$/confirm_order.html" />
-        <option value="$PROJECT_DIR$/detail.html" />
-        <option value="$PROJECT_DIR$/source/css/cart.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/source/js/route.js" />
-        <option value="$PROJECT_DIR$/source/js/controllers/cart.js" />
-        <option value="$PROJECT_DIR$/cart.html" />
-        <option value="$PROJECT_DIR$/source/css/font-awesome.css" />
-        <option value="$PROJECT_DIR$/source/js/controllers/detail.js" />
-        <option value="$PROJECT_DIR$/source/sass/base/_reset.scss" />
-        <option value="$PROJECT_DIR$/source/css/index.min.css" />
-        <option value="$PROJECT_DIR$/source/css/reset.css" />
-        <option value="$PROJECT_DIR$/source/sass/base/reset" />
-        <option value="$PROJECT_DIR$/less/index.css" />
-        <option value="$PROJECT_DIR$/source/sass/base/reset.scss" />
-        <option value="$PROJECT_DIR$/source/js/directive/derective.js" />
-        <option value="$PROJECT_DIR$/source/tmp/index.html" />
-        <option value="$PROJECT_DIR$/source/sass/base/_header.scss" />
-        <option value="$PROJECT_DIR$/source/sass/base/_footer.scss" />
-        <option value="$PROJECT_DIR$/source/sass/base/_common.scss" />
-        <option value="$PROJECT_DIR$/source/sass/index.scss" />
-        <option value="$PROJECT_DIR$/src/css/swiper3.07.min.css" />
-        <option value="$PROJECT_DIR$/src/css/swiper.css" />
-        <option value="$PROJECT_DIR$/dest/css/address.css" />
-        <option value="$PROJECT_DIR$/src/tmp/address.html" />
-        <option value="$PROJECT_DIR$/src/tmp/confirm_order.html" />
-        <option value="$PROJECT_DIR$/src/tmp/cart.html" />
-        <option value="$PROJECT_DIR$/src/tmp/order.html" />
-        <option value="$PROJECT_DIR$/src/tmp/user.html" />
-        <option value="$PROJECT_DIR$/src/tmp/search.html" />
-        <option value="$PROJECT_DIR$/src/js/servelet/servelet.js" />
-        <option value="$PROJECT_DIR$/extend.html" />
-        <option value="$PROJECT_DIR$/src/js/services/services.js" />
-        <option value="$PROJECT_DIR$/src/tmp/index.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers/index.js" />
-        <option value="$PROJECT_DIR$/src/cssCache/detail.css" />
-        <option value="$PROJECT_DIR$/src/sass/base/_common.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/src/sass/detail.scss" />
-        <option value="$PROJECT_DIR$/src/tmp/detail.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers/detail.js" />
-        <option value="$PROJECT_DIR$/src/tmp/register.html" />
-        <option value="$PROJECT_DIR$/src/tmp/login.html" />
         <option value="$PROJECT_DIR$/src/js/controllers/login.js" />
+        <option value="$PROJECT_DIR$/src/sass/base/_reset.scss" />
+        <option value="$PROJECT_DIR$/src/css/search.css" />
+        <option value="$PROJECT_DIR$/src/sass/base/_header.scss" />
+        <option value="$PROJECT_DIR$/src/sass/search.scss" />
+        <option value="$PROJECT_DIR$/src/sass/base/_footer.scss" />
+        <option value="$PROJECT_DIR$/src/sass/cart.scss" />
+        <option value="$PROJECT_DIR$/src/sass/user.scss" />
+        <option value="$PROJECT_DIR$/src/sass/order.scss" />
+        <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/css/user.css" />
+        <option value="$PROJECT_DIR$/src/css/reset.css" />
+        <option value="$PROJECT_DIR$/src/css/order.css" />
+        <option value="$PROJECT_DIR$/src/css/login.css" />
+        <option value="$PROJECT_DIR$/src/css/register.css" />
+        <option value="$PROJECT_DIR$/src/sass/register.scss" />
+        <option value="$PROJECT_DIR$/src/sass/login.scss" />
+        <option value="$PROJECT_DIR$/src/css/cart.css" />
+        <option value="$PROJECT_DIR$/src/sass/confirm_order.scss" />
+        <option value="$PROJECT_DIR$/src/sass/address.scss" />
+        <option value="$PROJECT_DIR$/src/css/address.css" />
+        <option value="$PROJECT_DIR$/src/css/extend.css" />
+        <option value="$PROJECT_DIR$/src/sass/base/_common.scss" />
+        <option value="$PROJECT_DIR$/src/css/confirm_order.css" />
+        <option value="$PROJECT_DIR$/src/sass/confirmOrder.scss" />
+        <option value="$PROJECT_DIR$/src/js/route.js" />
+        <option value="$PROJECT_DIR$/src/js/directive/derective.js" />
+        <option value="$PROJECT_DIR$/src/css/sort.css" />
+        <option value="$PROJECT_DIR$/src/sass/asort.scss" />
+        <option value="$PROJECT_DIR$/src/tmp/tDetail.html" />
+        <option value="$PROJECT_DIR$/src/lib/swiper/swiper.min.js" />
+        <option value="$PROJECT_DIR$/src/lib/swiper/swiper.min.css" />
+        <option value="$PROJECT_DIR$/src/sass/index.scss" />
+        <option value="$PROJECT_DIR$/src/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/js/controllers/index.js" />
+        <option value="$PROJECT_DIR$/src/sass/detail.scss" />
+        <option value="$PROJECT_DIR$/src/tmp/address.html" />
+        <option value="$PROJECT_DIR$/src/tmp/asort.html" />
+        <option value="$PROJECT_DIR$/src/tmp/cart.html" />
+        <option value="$PROJECT_DIR$/src/tmp/confirm_order.html" />
+        <option value="$PROJECT_DIR$/src/tmp/detail.html" />
+        <option value="$PROJECT_DIR$/src/tmp/index.html" />
+        <option value="$PROJECT_DIR$/src/tmp/login.html" />
+        <option value="$PROJECT_DIR$/src/tmp/order.html" />
+        <option value="$PROJECT_DIR$/src/tmp/register.html" />
+        <option value="$PROJECT_DIR$/src/tmp/search.html" />
+        <option value="$PROJECT_DIR$/src/tmp/user.html" />
+        <option value="$PROJECT_DIR$/slide.html" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/extend.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -258,8 +204,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="210" />
-    <option name="y" value="82" />
+    <option name="x" value="61" />
+    <option name="y" value="83" />
     <option name="width" value="1198" />
     <option name="height" value="744" />
   </component>
@@ -321,46 +267,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shenxianplat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nonghui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shenxianplat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nonghui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -376,17 +282,19 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\project\shenxianplat\source\js" />
-      <recent name="F:\project\shenxianplat\source\controllers" />
-      <recent name="F:\project\shenxianplat\source\img\detail" />
-      <recent name="F:\project\shenxianplat\source\img\index" />
-      <recent name="F:\project\shenxianplat\source\img\user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/angular" />
+      <recent name="$PROJECT_DIR$/src/sass/lib" />
       <recent name="F:\project\shenxianplat\source" />
       <recent name="F:\project\shenxianplat\source\font" />
       <recent name="F:\project\shenxianplat\source\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/lib/font-awesome" />
+      <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/src/lib/swiper" />
+      <recent name="$PROJECT_DIR$/src/sass" />
     </key>
   </component>
   <component name="RunManager">
@@ -460,18 +368,20 @@
       <workItem from="1469346102244" duration="152000" />
       <workItem from="1469346265069" duration="7728000" />
       <workItem from="1469499809852" duration="942000" />
-      <workItem from="1469545041197" duration="18171000" />
+      <workItem from="1469545041197" duration="20125000" />
+      <workItem from="1469712688937" duration="740000" />
+      <workItem from="1469853400481" duration="21778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26993000" />
+    <option name="totallyTimeSpent" value="51465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="82" width="1198" height="744" extended-state="0" />
+    <frame x="61" y="83" width="1198" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16861436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19949916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -505,404 +415,239 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/order.scss">
+    <entry file="file://$PROJECT_DIR$/src/css/user.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="169" column="24" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="20" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/index.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/directive/derective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="137" selection-start-line="13" selection-start-column="137" selection-end-line="13" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-802">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/base/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/base/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/extend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/npm-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3225">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-652">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/cart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="160" column="38" selection-start-line="160" selection-start-column="38" selection-end-line="160" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/confirm_order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/swiper.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2971">
-          <caret line="229" column="10" selection-start-line="229" selection-start-column="10" selection-end-line="229" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/swiper3.07.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6103">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="278">
+          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/address.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
+        <state relative-caret-position="285">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/login.css">
+    <entry file="file://$PROJECT_DIR$/src/css/extend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/order.css">
+    <entry file="file://$PROJECT_DIR$/src/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="77">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/search.css">
+    <entry file="file://$PROJECT_DIR$/src/css/confirm_order.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/user.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dest/css/address.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dest/js/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dest/css/index.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dest/css/detail.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/confirm_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2565">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="458" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/services/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/base/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2512">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cssCache/detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/detail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1294">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#943#949#0" expanded="true" />
-            <element signature="e#955#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="176">
+          <caret line="79" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/base/_common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/detail.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/confirmOrder.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/order.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/register.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/sort.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="182" column="7" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/directive/derective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/tDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/register.html">
+    <entry file="file://$PROJECT_DIR$/src/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="135">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp/user.html">
+    <entry file="file://$PROJECT_DIR$/src/sass/asort.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/login.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/cart.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="225" column="19" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/address.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/swiper/swiper.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="14" column="12540" selection-start-line="14" selection-start-column="12540" selection-end-line="14" selection-end-column="12540" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/swiper/swiper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="12436" selection-start-line="16" selection-start-column="12436" selection-end-line="16" selection-end-column="12436" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="4" column="694" selection-start-line="4" selection-start-column="694" selection-end-line="4" selection-end-column="694" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dest/css/address.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -910,10 +655,172 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/asort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tmp/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp/confirm_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/angular/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

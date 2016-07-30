@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="src/css/order.css" />
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="src/css/order.css"/>
+
 <header>
-    <a href="javascript:history.go(-1);" class="iconfont backIcon">&#60;</a>
-    <h1>订单列表</h1>
+    <a href="javascript:history.go(-1);" class="fl">
+        <span class="fa fa-angle-left"></span>
+    </a>
+    <span class="title">订单列表</span>
 </header>
-<div style="height:1rem;"></div>
+
 <aside class="orderSift">
     <a class="currStyle">待付款</a>
     <a>待发货</a>
@@ -22,14 +20,14 @@
                 <span>待付款</span>
             </dt>
             <dd>
-                <h2>优质牛肉5kg散装</h2>
+                <h5>优质牛肉5kg散装</h5>
                 <strong>
                     <em>0.00</em>
                     <span>1</span>
                 </strong>
             </dd>
             <dd>
-                <h2>新疆葡萄干散装</h2>
+                <h5>新疆葡萄干散装</h5>
                 <strong>
                     <em>0.00</em>
                     <span>1</span>
@@ -52,7 +50,7 @@
                 <span>待发货</span>
             </dt>
             <dd>
-                <h2>优质牛肉5kg散装</h2>
+                <h5>优质牛肉5kg散装</h5>
                 <strong>
                     <em>0.00</em>
                     <span>1</span>
@@ -74,7 +72,7 @@
                 <span>已完成</span>
             </dt>
             <dd>
-                <h2>优质牛肉5kg散装</h2>
+                <h5>优质牛肉5kg散装</h5>
                 <strong>
                     <em>0.00</em>
                     <span>1</span>
@@ -90,12 +88,3 @@
         </dl>
     </li>
 </ul>
-<div style="height:1.2rem;"></div>
-
-<script>
-    document.oncontextmenu=new Function("event.returnValue=false;");
-    document.onselectstart=new Function("event.returnValue=false;");
-</script>
-
-</body>
-</html>

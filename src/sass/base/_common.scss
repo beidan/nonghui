@@ -11,6 +11,28 @@
 
 }
 
+@mixin boxFlex($value) {
+  box-flex: $value;
+  -webkit-box-flex: $value;
+  -moz-box-flex: $value;
+}
+@mixin displayBox($value) {
+  display: $value;
+  display: -webkit-#{$value};
+  display: -moz-#{$value};
+}
+
+@mixin appearance($value) {
+  appearance: $value;
+  -moz-appearance: $value;
+  -webkit-appearance: $value;
+}
+@mixin scaleX($value){
+  transform: scaleX($value);
+  -webkit-transform: scaleX($value);
+  -moz-transform: scaleX($value);
+}
+
 //定义高度
 @mixin height($height: 1.6rem) {
   height: $height;

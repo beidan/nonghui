@@ -1,4 +1,23 @@
 @charset "UTF-8";
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*超出显示……*/
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
 @media only screen and (min-width: 320px) {
   html {
     font-size: 62.5% !important; } }
@@ -149,25 +168,6 @@ small, weak {
   font-family: 'freshregular';
   font-weight: normal;
   font-style: normal; }
-.fl {
-  float: left; }
-
-.fr {
-  float: right; }
-
-/*超出显示……*/
-.ellipsis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; }
-
-/*清除浮动*/
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  clear: both; }
-
 header {
   height: 4rem;
   line-height: 4rem;
@@ -179,18 +179,19 @@ header {
     color: white; }
   header .title {
     color: white;
-    margin-right: 30px; }
+    margin-right: 10px; }
 
-nav {
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
   background: #f8f8f8;
   border-top: 1px #f4f4f4 solid; }
-  nav a {
+  footer a {
     display: block;
+    padding: 6px 0;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     text-align: center;
@@ -199,10 +200,13 @@ nav {
     float: left;
     height: 100%;
     line-height: 1.2; }
-    nav a:before {
+    footer a:before {
       display: block;
       font-family: 'freshregular';
       font-size: 2.5rem; }
+    footer a p {
+      margin: 1px 0;
+      text-align: center; }
 
 #slide {
   width: 100%;

@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="src/cssCache/index.css"/>
+<link rel="stylesheet" type="text/css" href="src/css/index.css"/>
 
 <head-nav></head-nav>
 
@@ -12,9 +12,11 @@
     </div>
     <div class="pagination"></div>
 </div>
+
+
 <ul class="categoryLiIcon">
     <li ng-repeat="item in navList">
-        <a href="#">
+        <a href="#/asort">
             <img ng-src="{{item.imgsrc}}"/>
             <em>{{item.name}}</em>
         </a>
@@ -48,9 +50,13 @@
     </dd>
 </dl>
 <div class="hoverCart">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    <a href="#">0</a>
+    <a href="#/cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a href="#cart">0</a>
+    </a>
+
 </div>
 
 <foot-nav></foot-nav>
+
 

@@ -1,0 +1,144 @@
+@import "base/common";
+@import "base/reset";
+@import "base/header";
+
+$green: #0c0;
+$gray: #999;
+$lightGray: #666;
+
+
+.orderSift {
+  @include height(3.5rem);
+  @include displayBox(box);
+  padding: 0 3%;
+  background: white;
+  text-align: center;
+
+  a {
+    display: block;
+    @include boxFlex(1)
+  }
+}
+
+.orderList {
+  overflow: hidden;
+  margin-top: 5px;
+
+  .currStyle {
+    color: $green;
+    border-bottom: 1px $green solid;
+  }
+
+  li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    background: white;
+    padding: 0 3%;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      @include height(3rem);
+      //height: .85rem;
+      //line-height: .85rem;
+      border-bottom: 1px #d2d2d2 solid;
+
+      span {
+        &:first-child {
+          color: $gray;
+        }
+        &:last-child {
+          color: $green;
+          float: right;
+        }
+      }
+    }
+    dd {
+      margin: 0;
+      padding: 1rem 0;
+      overflow: hidden;
+      border-bottom: 1px #f4f4f4 solid;
+
+      h5 {
+        float: left;
+        width: 60%;
+        margin: 0;
+        color: $lightGray;
+      }
+      strong {
+        float: right;
+        display: block;
+        text-align: right;
+        font-weight: normal;
+
+        em {
+          font-style: normal;
+          display: block;
+          color: $lightGray;
+
+          &:before {
+            content: "￥";
+          }
+        }
+        span {
+          color: $gray;
+
+          &:before {
+            content: "x";
+          }
+        }
+      }
+      &:last-child {
+        text-align: right;
+        padding: .35rem 0;
+        border: none;
+
+        a {
+          display: inline-block;
+          width: 6rem;
+          text-align: center;
+          @include height(2.8rem);
+          margin-left: .5rem;
+          font-size: 1.3rem;
+          border-radius: 2px;
+        }
+        .order_delBtn {
+          background: white;
+          border: 1px #333 solid;
+          color: #333;
+        }
+        .order_payBtn {
+          background: $green;
+          border: 1px $green solid;
+          color: white;
+        }
+      }
+
+      &:nth-last-child(2) {
+        text-align: right;
+
+        span {
+          margin-left: .15rem;
+          color: $gray;
+
+          &:last-child b {
+            color: $green;
+
+            &:before {
+              content: "￥";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

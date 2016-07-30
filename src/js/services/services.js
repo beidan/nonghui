@@ -19,11 +19,7 @@ app.factory('getData', function ($http, $q) {
             var deferred = $q.defer();
             $http.post(url, opts)
                 .success(function (data) {
-                    if (data.Result || data.Success) {
-                        deferred.resolve(data);
-                    } else {
-                        deferred.reject(data);
-                    }
+                    deferred.resolve(data);
                 }).error(function (data) {
                 deferred.reject(data);
             });
@@ -34,6 +30,11 @@ app.factory('getData', function ($http, $q) {
     /*服务器接口*/
     return serviceUrls = {
         "indexUrl": 'http://121.42.190.17:8080/Shop_war/index',
-        'DetailUrl':'http://121.42.190.17:8080/Shop_war/Detail'
+        'DetailUrl': 'http://121.42.190.17:8080/Shop_war/Detail',
+        'LoginUrl': 'http://172.16.31.19:8080/Shop/login',
     }
+    // return localServices={
+    //     'loginUrl':'http://172.16.31.19:8080/Shop/login',
+    //
+    // }
 });

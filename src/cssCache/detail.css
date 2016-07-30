@@ -168,6 +168,24 @@ small, weak {
 .clearfix:after {
   clear: both; }
 
+header {
+  height: 4rem;
+  line-height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #21d9a2), color-stop(1, #31bd80));
+  text-align: center;
+  padding: 0 10px;
+  font-size: 1.6rem; }
+  header a {
+    color: white; }
+  header .title {
+    color: white;
+    margin-right: 10px; }
+
+header em {
+  font-size: .5rem;
+  position: absolute;
+  top: -6px; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -211,24 +229,6 @@ small, weak {
     border-radius: 50%;
     background: red; }
 
-header {
-  height: 3rem;
-  line-height: 3rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #21d9a2), color-stop(1, #31bd80));
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99; }
-  header h1 {
-    margin: 0;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    height: 3rem;
-    line-height: 3rem;
-    color: white; }
-
 .iconfont {
   font-family: 'freshregular'; }
 
@@ -250,13 +250,13 @@ header {
 
 .weight {
   border-top: 1px solid #ccc;
-  padding: 10px; }
+  padding: 10px 0px; }
 
 .shopTitle {
   padding: 10px; }
 
 .shopContainer {
-  padding: 10px 5px;
+  padding: 10px;
   width: 100%;
   margin: 0px auto;
   text-align: left;
@@ -267,7 +267,32 @@ header {
 .shopContainer p {
   margin-bottom: 15px; }
 
-.detailBox {
-  margin-top: 3.2rem; }
-  .detailBox > div {
-    background-color: white; }
+.detailBox > div {
+  background-color: white; }
+
+.btmNav {
+  height: 4rem;
+  line-height: 4rem;
+  z-index: 999;
+  background: #f8f8f8;
+  border-top: 1px #f2f2f2 solid;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box; }
+  .btmNav a {
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    display: block;
+    text-align: center;
+    border-right: 1px #f2f2f2 solid;
+    text-shadow: 0 1px 1px white;
+    color: #999; }
+    .btmNav a:last-child {
+      border: none; }
+  .btmNav .order {
+    background: #64ab5b;
+    color: white;
+    text-shadow: none; }

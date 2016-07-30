@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="src/css/register.css" />
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="src/css/register.css"/>
+
+<!--
+ login  和 register引用的css一样
+-->
+
+
 <header>
-    <a href="javascript:history.go(-1);" class="iconfont backIcon">&#60;</a>
-    <h1>注册</h1>
+    <a href="javascript:history.go(-1);" class="fl">
+        <span class="fa fa-angle-left"></span>
+    </a>
+    <span class="title">注册</span>
 </header>
-<div style="height:1rem;"></div>
 <ul class="formarea">
     <li>
         <label class="lit">账号：</label>
@@ -53,18 +53,6 @@
     </li>
 </ul>
 
-<script>
-    $(document).ready(function(){
-        $(".formarea li:last input[type='button']").click(function(){
-            alert("测试跳转效果，程序对接予以删除!");
-            location.href="login.html";
-        });
-    });
-</script>
-<script>
-    document.oncontextmenu=new Function("event.returnValue=false;");
-    document.onselectstart=new Function("event.returnValue=false;");
-</script>
 
-</body>
-</html>
+
+

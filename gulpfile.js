@@ -44,7 +44,7 @@ gulp.task('css', function() {
 
 // 混淆压缩js文件
 gulp.task('js', function() {
-    return gulp.src('src/js/*.js')
+    return gulp.src('src/js/**/*.js')
         .pipe(obfuscate())
         .pipe(uglify())
         .pipe(gulp.dest('dest/js'))
@@ -61,24 +61,25 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('src/scss/*.scss', ['sass']);
+    gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/css/*.css', ['css']);
+    gulp.watch('src/js/**/*.js', ['js']);
 
 });
 
 // 默认任务
 gulp.task('default', function(){
-    gulp.run('sass','watch');
+    gulp.run('sass','js','watch');
 
     // Watch .scss files
 
     // gulp.watch('src/scss/*.scss', ['sass']);
 
-    // Watch .css files
-    gulp.watch('src/css/*.css', ['css']);
+    //  Watch .css files
+    // gulp.watch('src/css/*.css', ['css']);
 
     // Watch .js files
-    gulp.watch('src/js/*.js', ['js']);
+    // gulp.watch('src/js/*.js', ['js']);
 
 
 

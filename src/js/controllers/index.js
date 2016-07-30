@@ -1,15 +1,3 @@
-window.onload = function () {
-    addClass('loading', 'loader-chanage');
-    var ele = document.getElementById('loading');
-    fadeOut(ele);
-    var mySwiper = new Swiper('#slide', {
-        autoplay: 5000,
-        visibilityFullFit: true,
-        loop: true,
-        pagination: '.pagination',
-    });
-}
-
 /*
  * 首页  尚未实现功能:
  * 1.分页,一页显示几条数据?

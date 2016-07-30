@@ -1,0 +1,49 @@
+@import "base/common";
+@import "base/reset";
+@import "base/header";
+
+.vipheader {
+  padding: 1em;
+  height: 9rem;
+  background: url(../img/user/hbg.png);
+  background-size: cover;
+
+  .touxiang {
+    width: 72px;
+    height: 72px;
+    margin: 0px auto;
+    border-radius: 100%;
+    border: 2px solid #fff;
+
+    img {
+      border-radius: 100%;
+      width: 100%;
+    }
+  }
+  .name {
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    line-height: 2em;
+  }
+
+  .gztt {
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.userItem {
+  li {
+    background-color: white;
+    border-bottom: 1px solid #c2c2c2;
+  }
+  a {
+    font-size: 1.5rem;
+    color: #4e4e4e;
+    padding: 15px 10px;
+    display: block;
+  }
+}
+

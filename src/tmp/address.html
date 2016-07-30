@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="src/css/address.css" />
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="src/css/address.css"/>
+
+
 <header>
-    <a href="javascript:history.go(-1);" class="iconfont backIcon">&#60;</a>
-    <h1>我的地址</h1>
+    <a href="javascript:history.go(-1);" class="fl">
+        <span class="fa fa-angle-left" ></span>
+    </a>
+    <span class="title">我的地址</span>
 </header>
-<div style="height:1rem;"></div>
 <ul class="userForm">
     <li>
         <input type="text" value="DeathGhost"/>
@@ -38,13 +34,11 @@
     </li>
 </ul>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         //测试返回页面，程序对接删除即可
-        $(".userForm input[type='button']").click(function(){
+        $(".userForm input[type='button']").click(function () {
             alert("地址修改成功！");
-            location.href="#/confirm_order";
+            location.href = "#/confirm_order";
         });
     });
 </script>
-</body>
-</html>
