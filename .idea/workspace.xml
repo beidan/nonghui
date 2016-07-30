@@ -2,91 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de56d5e-686d-4472-8af5-c421b387e3fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/asort.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/confirmOrder.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/swiper/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/swiper/swiper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/address.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/register.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tmp/asort.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_common.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/_header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/00d546388f27bcde97601ef4684d684c7d57c5e0/reset.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_common.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/_header.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/179b68faa577fba1f17342da0aa11a05bebf1d6e/reset.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/detail.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/index.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/login.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/order.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/search.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b488fb2ff3660dc440081c22ed292b2d7296c741/user.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f512377317bf3f6106a918c704e6ae2fb9e2159a/index.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/slide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/extend.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/loaders.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/loading.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/swiper3.07.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/font-awesome.css" afterPath="$PROJECT_DIR$/src/lib/font-awesome/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/detail.css" afterPath="$PROJECT_DIR$/src/css/detail.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/login.css" afterPath="$PROJECT_DIR$/src/sass/confirmOrder.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/order.css" afterPath="$PROJECT_DIR$/src/sass/cart.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/search.css" afterPath="$PROJECT_DIR$/src/sass/asort.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cssCache/user.css" afterPath="$PROJECT_DIR$/src/css/confirm_order.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/common.js" afterPath="$PROJECT_DIR$/src/lib/common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/lazeload.js" afterPath="$PROJECT_DIR$/src/lib/lazeload.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/lib/swiper.min.js" afterPath="$PROJECT_DIR$/src/lib/swiper.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sass/base/reset.scss" afterPath="$PROJECT_DIR$/src/sass/base/_reset.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sass/register" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shenxianplat.iml" afterPath="$PROJECT_DIR$/.idea/shenxianplat.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/detail.min.css" afterPath="$PROJECT_DIR$/dest/css/detail.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/index.min.css" afterPath="$PROJECT_DIR$/dest/css/index.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/login.min.css" afterPath="$PROJECT_DIR$/dest/css/login.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/order.min.css" afterPath="$PROJECT_DIR$/dest/css/order.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/search.min.css" afterPath="$PROJECT_DIR$/dest/css/search.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/css/user.min.css" afterPath="$PROJECT_DIR$/dest/css/user.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/js/route.js" afterPath="$PROJECT_DIR$/dest/js/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend.html" afterPath="$PROJECT_DIR$/extend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/address.css" afterPath="$PROJECT_DIR$/src/css/address.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/cart.css" afterPath="$PROJECT_DIR$/src/css/cart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/login.css" afterPath="$PROJECT_DIR$/src/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/order.css" afterPath="$PROJECT_DIR$/src/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/register.css" afterPath="$PROJECT_DIR$/src/css/register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/search.css" afterPath="$PROJECT_DIR$/src/css/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/user.css" afterPath="$PROJECT_DIR$/src/css/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/index.js" afterPath="$PROJECT_DIR$/src/js/controllers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/login.js" afterPath="$PROJECT_DIR$/src/js/controllers/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/directive/derective.js" afterPath="$PROJECT_DIR$/src/js/directive/derective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/route.js" afterPath="$PROJECT_DIR$/src/js/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/services.js" afterPath="$PROJECT_DIR$/src/js/services/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_common.scss" afterPath="$PROJECT_DIR$/src/sass/base/_common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_footer.scss" afterPath="$PROJECT_DIR$/src/sass/base/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_header.scss" afterPath="$PROJECT_DIR$/src/sass/base/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/detail.scss" afterPath="$PROJECT_DIR$/src/sass/detail.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/index.scss" afterPath="$PROJECT_DIR$/src/sass/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/login.scss" afterPath="$PROJECT_DIR$/src/sass/login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/order.scss" afterPath="$PROJECT_DIR$/src/sass/order.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/search.scss" afterPath="$PROJECT_DIR$/src/sass/search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/user.scss" afterPath="$PROJECT_DIR$/src/sass/user.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/address.html" afterPath="$PROJECT_DIR$/src/tmp/address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/cart.html" afterPath="$PROJECT_DIR$/src/tmp/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/confirm_order.html" afterPath="$PROJECT_DIR$/src/tmp/confirm_order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/detail.html" afterPath="$PROJECT_DIR$/src/tmp/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/index.html" afterPath="$PROJECT_DIR$/src/tmp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/login.html" afterPath="$PROJECT_DIR$/src/tmp/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/order.html" afterPath="$PROJECT_DIR$/src/tmp/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/register.html" afterPath="$PROJECT_DIR$/src/tmp/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/search.html" afterPath="$PROJECT_DIR$/src/tmp/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tmp/user.html" afterPath="$PROJECT_DIR$/src/tmp/user.html" />
     </list>
     <ignored path="shenxianplat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="extend.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="extend.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extend.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -370,12 +277,12 @@
       <workItem from="1469499809852" duration="942000" />
       <workItem from="1469545041197" duration="20125000" />
       <workItem from="1469712688937" duration="740000" />
-      <workItem from="1469853400481" duration="21778000" />
+      <workItem from="1469853400481" duration="21883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51465000" />
+    <option name="totallyTimeSpent" value="51570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="83" width="1198" height="744" extended-state="0" />
@@ -809,18 +716,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extend.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/extend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding />
         </state>
       </provider>
