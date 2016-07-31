@@ -13,20 +13,26 @@ app.factory('getData', function ($http, $q) {
         },
     }
 }).factory('postData', function ($http, $q) {
-    /*前台传数据给后台*/
+
     return {
-        post: function (url, opts) {
+        post: function (url, options) {
             var deferred = $q.defer();
-            $http.post(url, opts)
-                .success(function (data) {
-                    deferred.resolve(data);
-                }).error(function (data) {
+            $http.post(url,
+                {languageColumn:'name_eu'},
+                {'Content-Type':'application/x-www-form-urlencoded'},
+                options).success(function (data) {
+               deferred.resolve(data);
+            }).error(function (data) {
                 deferred.reject(data);
             });
             return deferred.promise;
         }
     }
 }).factory('serviceURL', function () {
+    /*服务器地址  121.42.190.17
+     *本地地址   172.16.31.19
+     * */
+
     /*服务器接口*/
     return serviceUrls = {
         "indexUrl": 'http://121.42.190.17:8080/Shop_war/index',

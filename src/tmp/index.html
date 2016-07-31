@@ -44,15 +44,16 @@
                     <p>
                         <strong class="price">{{item.price}}</strong>
                     </p>
-                    <a class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="addToCart" ng-click=addToCart();><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </div>
             </li>
+        </ul>
     </dd>
 </dl>
 <div class="hoverCart">
     <a href="#/cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <a href="#cart">0</a>
+        <a href="#cart">{{model.content}}</a>
     </a>
 
 </div>

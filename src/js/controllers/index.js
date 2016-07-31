@@ -35,6 +35,19 @@ app.controller('IndexController', function ($scope, getData, serviceURL) {
             });
     }
 
+    $scope.model = {};
+    $scope.model.content = 1;
+
+
+    var cartNum;
+    /*添加到购物车功能    暂未实现*/
+    $scope.addToCart = function () {
+        $scope.model.content = $scope.model.content + 1;
+        console.log($scope.model.content);
+
+    }
+
+
     $scope.swiperImg = [
         {imgsrc: 'src/img/index/slide001.jpg'},
         {imgsrc: 'src/img/index/slide002.jpg'},

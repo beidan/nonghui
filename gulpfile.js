@@ -35,7 +35,7 @@ gulp.task('html', function() {
 
 // 合并、压缩、重命名css
 gulp.task('css', function() {
-    return gulp.src('src/cssCache/*.css')
+    return gulp.src('src/css/*.css')
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
         .pipe(gulp.dest('dest/css'))
@@ -56,7 +56,7 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
     return sass('src/sass/*.scss')
         .on('error', sass.logError)
-        .pipe(gulp.dest('src/cssCache'))
+        .pipe(gulp.dest('src/css'))
         .pipe(notify({ message: 'scss task ok' }));
 });
 

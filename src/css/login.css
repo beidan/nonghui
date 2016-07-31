@@ -212,7 +212,7 @@ header {
       outline: none; }
     .formarea li:last-child {
       background: none; }
-      .formarea li:last-child input[type="button"] {
+      .formarea li:last-child input[type="submit"] {
         width: 100%;
         height: 3.8rem;
         line-height: 3.8rem;
@@ -221,7 +221,7 @@ header {
         font-size: 2rem;
         color: white;
         border-radius: 3px; }
-        .formarea li:last-child input[type="button"]:active {
+        .formarea li:last-child input[type="submit"]:active {
           background: #53ab48; }
     .formarea li select {
       box-flex: button;

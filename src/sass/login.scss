@@ -41,7 +41,7 @@
     &:last-child {
       background: none;
 
-      input[type="button"] {
+      input[type="submit"] {
         width: 100%;
         @include height(3.8rem);
         background: #31bd80;
