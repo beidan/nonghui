@@ -3,7 +3,7 @@ app.directive("headNav", function () {
     return {
         restrict: 'E',
         replace: true,
-        template: '<header><a href="#/" class="fl">广州市 <span class="fa fa-map-marker"></span></a><span class="title">生鲜</span><a href="#/search" class="cart fr"><i class="fa fa-search" aria-hidden="true">' +
+        template: '<header><a href="#/cityPick" class="fl">{{::city}} <span class="fa fa-map-marker"></span></a><span class="title">生鲜</span><a href="#/search" class="fr"><i class="fa fa-search" aria-hidden="true">' +
         '</i></a></header>',
     };
 });
@@ -18,5 +18,6 @@ app.directive("footNav", function () {
         '<a href="#/cart"><p class="fa fa-shopping-cart icon" aria-hidden="true"></p><p>购物车</p></a><a href="#/user"><p class="fa fa-user icon" aria-hidden="true"></p><p>我的</p></a></footer>'
     };
 });
+
 
 

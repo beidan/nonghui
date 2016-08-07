@@ -1,4 +1,12 @@
 app.controller('CartController',function($scope){
+
+    var loginState = localStorage.getItem('loginState');
+    if(loginState){
+        console.log('ok')
+    }else{
+        console.log('请先登陆');
+    }
+
     $scope.items = [
         {name: "新鲜小黄鱼特惠", num: 1, price: 199.00,origPrice: 223.00,imgsrc:'src/img/index/goods008.jpg'},
         {name: "豆腐干2kg装", num: 1, price: 139.00,origPrice: 243.00,imgsrc:'src/img/index/goods009.jpg'},
@@ -23,9 +31,13 @@ app.controller('CartController',function($scope){
         }
         return total;
     };
+
+
     $scope.remove = function (index) {
         $scope.items.splice(index, 1);
     }
+
+
     $scope.AddNum = function(index){
         $scope.items[index].num ++ ;
     }

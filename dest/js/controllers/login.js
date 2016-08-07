@@ -1,1 +1,1 @@
-app.controller("LoginController",function(o,e,n,l){o.ಠ_ಠ631="12412",o.ಠ_ಠ630="eee"});
+app.controller("LoginController",function(o,n,e,r){o.ಠ_ಠ901=function(){e.get(r.LoginUrl,{params:{phone:o.userName,password:o.userPsw}}).then(function(o){o.state||console.log("登陆成功!")},function(o,n,e,r){console.log("error!")})}});

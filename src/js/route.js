@@ -2,7 +2,7 @@ var app = angular.module('myApp',['ngRoute']);
 
     app.config(['$routeProvider', function($routeProvider){
         $routeProvider
-            .when('/',{
+            .when('/index',{
                 templateUrl:'src/tmp/index.html',
                 controller:'IndexController'
             })
@@ -18,6 +18,10 @@ var app = angular.module('myApp',['ngRoute']);
             .when('/detail',{
                 templateUrl:'src/tmp/detail.html',
                 controller:'DetailController'
+            })
+            .when('/cityPick',{
+                templateUrl:'src/tmp/citypick.html',
+                controller:'cityPickController'
             })
             .when('/search',{templateUrl:'src/tmp/search.html'})
             .when('/order',{templateUrl:'src/tmp/order.html'})

@@ -8,7 +8,6 @@
 
 @mixin center {
   text-align: center;
-
 }
 
 @mixin boxFlex($value) {
@@ -47,6 +46,8 @@
   float: right;
 }
 
+
+
 /*超出显示……*/
 .ellipsis {
   text-overflow: ellipsis;
@@ -65,9 +66,31 @@
   &:after {
     clear: both;
   }
-
 }
 
+/*公共样式*/
+$themeColor: #31bd80;
+$themeHoverColor: #53ab48;
+
+
+.button{
+  width: 100%;
+  @include height(3.8rem);
+  background: $themeColor;
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 3px;
+
+  &:active {
+    background: $themeHoverColor;
+  }
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}
 
 
 

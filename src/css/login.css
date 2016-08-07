@@ -18,6 +18,24 @@
 .clearfix:after {
   clear: both; }
 
+/*公共样式*/
+.button {
+  width: 100%;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  background: #31bd80;
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 3px; }
+  .button:active {
+    background: #53ab48; }
+  .button:focus {
+    border: none;
+    outline: none; }
+
+/*rem  不同页面使用不同font-size*/
 @media only screen and (min-width: 320px) {
   html {
     font-size: 62.5% !important; } }
@@ -38,10 +56,18 @@ body {
   color: #333;
   background-color: #f1f1f1; }
 
-a:active {
+a {
+  color: #06c1ae;
+  text-decoration: none;
   outline: 0; }
-a:hover {
-  outline: 0; }
+  a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  a:active {
+    outline: 0; }
+  a:hover {
+    outline: 0; }
 
 button, input, optgroup, select,
 textarea {
@@ -64,8 +90,6 @@ img {
   vertical-align: middle;
   border: 0; }
 
-@-ms-viewport {
-  width: device-width; }
 html {
   font-size: 50px;
   -webkit-tap-highlight-color: transparent;
@@ -114,24 +138,6 @@ button, input, select, textarea {
   font-size: inherit;
   line-height: inherit; }
 
-a {
-  color: #06c1ae;
-  text-decoration: none;
-  outline: 0; }
-
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
-
-a.react, label.react {
-  display: block;
-  color: inherit;
-  height: 100%; }
-
-a.react.react-active, a.react:active, label.react:active {
-  background: rgba(0, 0, 0, 0.1); }
-
 ul {
   margin: 0;
   padding: 0;
@@ -164,10 +170,6 @@ small, weak {
   color: #999;
   line-height: normal; }
 
-@font-face {
-  font-family: 'freshregular';
-  font-weight: normal;
-  font-style: normal; }
 header {
   height: 4rem;
   line-height: 4rem;
@@ -212,17 +214,6 @@ header {
       outline: none; }
     .formarea li:last-child {
       background: none; }
-      .formarea li:last-child input[type="submit"] {
-        width: 100%;
-        height: 3.8rem;
-        line-height: 3.8rem;
-        background: #31bd80;
-        border: none;
-        font-size: 2rem;
-        color: white;
-        border-radius: 3px; }
-        .formarea li:last-child input[type="submit"]:active {
-          background: #53ab48; }
     .formarea li select {
       box-flex: button;
       -webkit-box-flex: button;

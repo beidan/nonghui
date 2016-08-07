@@ -10,37 +10,34 @@
     </a>
 </header>
 
-<div ng-controller="DetailController" class="detailBox">
-    <div id="slide">
+    <div ng-controller="DetailController" class="detailBox">
+    <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" ng-repeat="item in swiperImg">
-                <a href="#">
-                    <img ng-src="{{item.imgsrc}}" alt="">
-                </a>
+            <div class="swiper-slide" ng-repeat="item in imgs">
+                <img ng-src="{{item.imageUrl}}" alt="shop img"/>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="pagination"></div>
     </div>
 
-
     <div class="shopNum">
-        <h4>{{detail.title}}</h4>
+        <h4>{{::detail.title}}</h4>
         <div class="clearfix">
             <p class="price fl">
-                <span class="color_orange font20">{{detail.price}}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                <del>{{detail.prePrice}}</del>
+                <span class="color_orange font20">{{::detail.price}}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <del>{{::detail.prePrice}}</del>
             </p>
             <span class="fr">
             <div class="btn-group" role="group" aria-label="...">
                 <button type="button" class="btn btn-default"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                <button type="button" class="btn btn-default disabled">{{detail.num}}</button>
+                <button type="button" class="btn btn-default disabled">{{::detail.num}}</button>
                 <button type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
         </span>
         </div>
         <div class="weight">
             <span>商品规格</span>
-            <span class="fr">{{detail.weight}}</span>
+            <span class="fr">{{::detail.weight}}</span>
         </div>
     </div>
     <div class="shopTitle">
@@ -48,7 +45,7 @@
     </div>
     <div>
         <div class="shopContainer">
-            <p>{{detail.introduce}}</p>
+            <p>{{::detail.introduce}}</p>
         </div>
     </div>
 </div>

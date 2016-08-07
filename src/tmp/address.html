@@ -7,14 +7,15 @@
     </a>
     <span class="title">我的地址</span>
 </header>
-<ul class="userForm">
+<ul class="userForm" ng-controller="addressController">
     <li>
         <input type="text" value="DeathGhost"/>
     </li>
     <li>
-        <select>
-            <option>陕西省</option>
-        </select>
+        <a href="#/cityPick">{{::city}}</a>
+        <!--<select>-->
+            <!--<option>陕西省</option>-->
+        <!--</select>-->
     </li>
     <li>
         <select>
@@ -30,15 +31,7 @@
         <textarea>省体育场220号</textarea>
     </li>
     <li>
-        <input type="button" value="修改地址" class="formLastBtn"/>
+        <input type="button" value="修改地址" class="button"/>
     </li>
 </ul>
-<script>
-    $(document).ready(function () {
-        //测试返回页面，程序对接删除即可
-        $(".userForm input[type='button']").click(function () {
-            alert("地址修改成功！");
-            location.href = "#/confirm_order";
-        });
-    });
-</script>
+

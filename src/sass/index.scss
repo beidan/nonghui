@@ -2,6 +2,9 @@
 @import "base/reset";
 @import "base/header";
 @import "base/footer";
+@import "base/swiper";
+@import "citypick";
+
 
 #slide {
   width: 100%;
@@ -213,4 +216,8 @@
   }
 }
 
-
+.cart{
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}

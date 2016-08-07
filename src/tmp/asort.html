@@ -5,44 +5,12 @@
     <i class="fa fa-search search" aria-hidden="true"></i>
 </aside>
 
-<div class="contaniner fixed-cont">
+<div class="contaniner fixed-cont" ng-controller="AsortController">
     <aside class="assort">
-        <ul>
+        <ul ng-repeat="item in navList">
             <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>居家百货</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
-            </li>
-            <li>
-                <img src="src/img/index/menu_bg_14.png"/>
-                <span>时尚智能</span>
+                <img ng-src="{{::item.imgsrc}}"/>
+                <span>{{::item.name}}</span>
             </li>
         </ul>
     </aside>
@@ -55,56 +23,19 @@
         </figure>
         <dl>
             <dt>宝宝营养</dt>
-            <dd>
+            <dd ng-repeat="item in list1">
                 <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
+                    <img ng-src="{{::item.imgsrc}}"/>
                     <p>BABY</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>添冲剂</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>BABY</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>添冲剂</p>
                 </a>
             </dd>
         </dl>
         <dl>
             <dt>妈妈专区</dt>
-            <dd>
+            <dd ng-repeat="item in list2">
                 <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-
+                    <img ng-src="{{::item.imgsrc}}"/>
                     <p>BABY</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>添冲剂</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>BABY</p>
-                </a>
-            </dd>
-            <dd>
-                <a href="#">
-                    <img src="http://121.42.190.17/Shop/1380466265056+-318472707.jpg"/>
-                    <p>添冲剂</p>
                 </a>
             </dd>
         </dl>

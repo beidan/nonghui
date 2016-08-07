@@ -13,15 +13,15 @@
         <a class="edit" ng-click="toggle($event)">编辑</a>
     </dt>
     <dd ng-repeat = 'item in items'>
-        <a href="product.html" class="goodsPic"><img ng-src="{{item.imgsrc}}"/></a>
+        <a href="product.html" class="goodsPic"><img ng-src="{{::item.imgsrc}}"/></a>
         <div class="goodsInfor">
             <h4>
-                <a href="product.html">{{item.name}}</a>
-                <span>{{item.num}}</span>
+                <a href="product.html">{{::item.name}}</a>
+                <span>{{::item.num}}</span>
             </h4>
             <div class="priceArea">
-                <strong>{{item.price}}</strong>
-                <del>{{item.origPrice}}</del>
+                <strong>{{::item.price}}</strong>
+                <del>{{::item.origPrice}}</del>
             </div>
             <div class="numberWidget"  ng-show="editShow">
                 <input type="button" value="-" class="minus" ng-click="SubNum($index)"/>

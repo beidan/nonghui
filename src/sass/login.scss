@@ -40,20 +40,6 @@
     }
     &:last-child {
       background: none;
-
-      input[type="submit"] {
-        width: 100%;
-        @include height(3.8rem);
-        background: #31bd80;
-        border: none;
-        font-size: 2rem;
-        color: white;
-        border-radius: 3px;
-
-        &:active {
-          background: #53ab48;
-        }
-      }
     }
 
     select {

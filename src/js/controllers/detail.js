@@ -7,24 +7,66 @@
  *
  * */
 
+// $(function () {
+//     // var mySwiper = new Swiper('.swiper-container', {
+//     //     autoplay: 5000,//可选选项，自动滑动
+//     // })
+//
+//         var mySwiper = new Swiper ('.swiper-container', {
+//             direction: 'vertical',//水平还是垂直方向
+//             loop: true,//循环
+// // 如果需要分页器
+//             pagination: '.swiper-pagination',
+// // 如果需要前进后退按钮
+//             nextButton: '.swiper-button-next',
+//             prevButton: '.swiper-button-prev',
+// // 如果需要滚动条
+//             scrollbar: '.swiper-scrollbar',
+//         })
+//         // $(".swiper-container").swiper({
+//         //     autoplay : 3000,
+//         //     speed:300,
+//         //     draggable : false,
+//         // });
+//
+//     $(".swiper-container").swiper({
+//         direction: 'vertical',//水平还是垂直方向
+//         loop: true,//循环
+// // 如果需要分页器
+//         pagination: '.swiper-pagination',
+// // 如果需要前进后退按钮
+//         nextButton: '.swiper-button-next',
+//         prevButton: '.swiper-button-prev',
+// // 如果需要滚动条
+//         scrollbar: '.swiper-scrollbar',
+//     });
+// });
+
 app.controller('DetailController', function ($scope, $location, getData, serviceURL) {
+
     getData.get(serviceURL.DetailUrl, {
         params: {
             id: $location.search().id
         },
     }).then(function (data) {
-        $scope.imgs = data.imageUrl;
         $scope.detail = data.product;
+        $scope.imgs = data.imageUrl;
+
+        $(".swiper-container").swiper({
+            loop: true,
+            pagination: '.swiper-pagination',
+        });
     }, function (data, status, headers, config) {
         console.log('error!');
     });
 
 
-    $scope.imgs = [
-        {imagesrc: 'src/img/detail/1.jpg'},
-        {imagesrc: 'src/img/detail/3.jpg'},
-        {imagesrc: 'src/img/detail/4.jpg'},
-    ];
+
+    // $scope.imgs = [
+    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
+    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
+    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
+    // ];
     // $scope.detail = {
     //     title: '纯正天然健康果蔬系列之有机菠菜',
     //     price: '¥136',
