@@ -186,7 +186,7 @@ header {
 .vipheader {
   padding: 1em;
   height: 9rem;
-  background: url(../img/user/hbg.png);
+  background: url(../../img/user/hbg.png);
   background-size: cover; }
   .vipheader .touxiang {
     width: 72px;

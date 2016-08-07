@@ -1,12 +1,10 @@
 /*
-*
-* 登陆成功后跳转页面~
-* */
+ *
+ * 登陆成功后跳转页面~
+ * */
 
 app.controller('LoginController', function ($scope, $http, getData, serviceURL) {
-
-
-    /*gei  请求*/
+    /*get请求*/
     $scope.submit = function () {
         getData.get(serviceURL.LoginUrl, {
             params: {
@@ -23,7 +21,6 @@ app.controller('LoginController', function ($scope, $http, getData, serviceURL) 
                 console.log('error!');
             });
     }
-
 
 
     // $scope.submit = function () {

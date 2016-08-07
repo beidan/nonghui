@@ -1,5 +1,4 @@
-app.controller('cityPickController', function ($scope, $location, $window) {
-
+app.controller('cityPickController', function ($scope, $location, $rootScope) {
     //选择城市
     $('body').on('click', '.city-list p', function () {
         var cityValue = $(this).html(),
@@ -14,12 +13,9 @@ app.controller('cityPickController', function ($scope, $location, $window) {
         var s = $(this).html();
         $(window).scrollTop($('#' + s + '1').offset().top);
     });
-
-    /*跳转到主页*/
+    /*返回上一页*/
     $scope.goPath = function () {
-        var indexUrl = localStorage.getItem('indexUrl');
-        $window.location.href = indexUrl;
+        history.back(-1);
     }
-
 })
 ;

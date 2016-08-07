@@ -35,7 +35,7 @@ gulp.task('html', function() {
 
 // 合并、压缩、重命名css
 gulp.task('css', function() {
-    return gulp.src('src/css/*.css')
+    return gulp.src('src/styles/css/*.css')
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
         .pipe(gulp.dest('dest/css'))
@@ -54,15 +54,15 @@ gulp.task('js', function() {
 
 //编译scss
 gulp.task('sass', function () {
-    return sass('src/sass/*.scss')
+    return sass('src/styles/sass/*.scss')
         .on('error', sass.logError)
-        .pipe(gulp.dest('src/css'))
+        .pipe(gulp.dest('src/styles/css'))
         .pipe(notify({ message: 'scss task ok' }));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('src/sass/**/*.scss', ['sass']);
-    gulp.watch('src/css/*.css', ['css']);
+    gulp.watch('src/styles/sass/**/*.scss', ['sass']);
+    gulp.watch('src/styles/css/*.css', ['css']);
     gulp.watch('src/js/**/*.js', ['js']);
 
 });

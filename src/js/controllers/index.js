@@ -43,19 +43,11 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
         pagination: '.swiper-pagination',
     });
 
-
+    /*添加到购物车,初始化购物车数量*/
     $scope.content = 1;
-    /*添加到购物车功能    暂未实现*/
     $scope.addToCart = function (content) {
-        $scope.content = 1;
         $scope.content = $scope.content + 1;
-        console.log($scope.content);
     }
-
-    $scope.content = 1;
-
-    var city = localStorage.getItem('city');
-    $scope.city = city;
 
     /*分类及轮播*/
     $scope.navList = SortDatas;
@@ -65,6 +57,8 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
     ];
 
     /*定位功能*/
+    var city = localStorage.getItem('city');
+    $scope.city = city;
     Location.getLocation();
 
 

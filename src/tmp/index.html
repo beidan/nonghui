@@ -1,6 +1,7 @@
-<link rel="stylesheet" type="text/css" href="src/css/index.css"/>
+<link rel="stylesheet" type="text/css" href="src/styles/css/index.css"/>
 
 <head-nav></head-nav>
+<div ng-controller="IndexController">
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -19,7 +20,7 @@
         </a>
     </li>
 </ul>
-<dl class="tab_proList" ng-controller="IndexController">
+<dl class="tab_proList" >
     <dt>
         <span ng-click="toggleList($event)">热销</span>
         <span ng-click="toggleList($event)">新品</span>
@@ -53,6 +54,7 @@
         <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
         <a href="#cart">{{content}}</a>
     </a>
+</div>
 </div>
 
 <foot-nav></foot-nav>

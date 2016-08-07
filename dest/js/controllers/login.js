@@ -1,1 +1,1 @@
-app.controller("LoginController",function(o,n,e,r){o.ಠ_ಠ901=function(){e.get(r.LoginUrl,{params:{phone:o.userName,password:o.userPsw}}).then(function(o){o.state||console.log("登陆成功!")},function(o,n,e,r){console.log("error!")})}});
+app.controller("LoginController",function(o,n,e,t){o.ಠ_ಠ972=function(){e.get(t.LoginUrl,{params:{phone:o.userName,password:o.userPsw}}).then(function(o){o.state||(localStorage.setItem("loginState",1),console.log("登陆成功!"))},function(o,n,e,t){console.log("error!")})}});
