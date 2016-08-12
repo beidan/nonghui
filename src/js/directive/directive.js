@@ -3,7 +3,7 @@ app.directive("headNav", function () {
     return {
         restrict: 'E',
         replace: true,
-        template: '<header><a href="#/cityPick" class="fl">{{::city}} <span class="fa fa-map-marker"></span></a><span class="title">生鲜</span><a href="#/search" class="fr"><i class="fa fa-search" aria-hidden="true">' +
+        template: '<header><a href="#/cityPick" class="fl ellipsis" style="width: 50px;">{{::city}} <span class="fa fa-map-marker"></span></a><span class="title">生鲜</span><a href="#/search" class="fr"><i class="fa fa-search" aria-hidden="true">' +
         '</i></a></header>',
     };
 });

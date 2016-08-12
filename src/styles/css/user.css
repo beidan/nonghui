@@ -215,3 +215,6 @@ header {
   color: #4e4e4e;
   padding: 15px 10px;
   display: block; }
+.userItem .logout {
+  position: fixed;
+  bottom: 0; }

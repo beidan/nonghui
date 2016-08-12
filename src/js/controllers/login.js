@@ -3,7 +3,7 @@
  * 登陆成功后跳转页面~
  * */
 
-app.controller('LoginController', function ($scope, $http, getData, serviceURL) {
+app.controller('LoginController', function ($scope, $http, $location, getData, serviceURL) {
     /*get请求*/
     $scope.submit = function () {
         getData.get(serviceURL.LoginUrl, {
@@ -13,9 +13,17 @@ app.controller('LoginController', function ($scope, $http, getData, serviceURL) 
             }
         })
             .then(function (data) {
-                if (!data.state) {
+                if (data.state === 0) {
                     localStorage.setItem('loginState', 1);
-                    console.log('登陆成功!');
+                    localStorage.setItem('user_data', JSON.stringify(data.user));
+                    alert('登陆成功');
+                    console.log('login');
+                    $location.path('/index');
+                } else {
+                    console.log(data.errorMsg);
+                    alert(data.errorMsg);
+                    $scope.userName = '';
+                    $scope.userPsw = '';
                 }
             }, function (data, status, headers, config) {
                 console.log('error!');

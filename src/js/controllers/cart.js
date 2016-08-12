@@ -1,23 +1,37 @@
-app.controller('CartController',function($scope){
+app.controller('CartController', function ($scope, isLogin, getData, serviceURL) {
 
-    var loginState = localStorage.getItem('loginState');
-    if(loginState){
-        console.log('ok')
-    }else{
-        console.log('请先登陆');
-    }
+    isLogin.isLogin();
+
+    getData.get(serviceURL.MyCartUrl, {})
+        .then(function (data) {
+            console.log(data);
+            // if (data.state === 0) {
+            //     localStorage.setItem('loginState', 1);
+            //     localStorage.setItem('user_data', JSON.stringify(data.user));
+            //     alert('登陆成功');
+            //     console.log('login');
+            //     $location.path('/index');
+            // } else {
+            //     console.log(data.errorMsg);
+            //     alert(data.errorMsg);
+            //     $scope.userName = '';
+            //     $scope.userPsw = '';
+            // }
+        }, function (data, status, headers, config) {
+            console.log('error!');
+        });
 
     $scope.items = [
-        {name: "新鲜小黄鱼特惠", num: 1, price: 199.00,origPrice: 223.00,imgsrc:'src/img/index/goods008.jpg'},
-        {name: "豆腐干2kg装", num: 1, price: 139.00,origPrice: 243.00,imgsrc:'src/img/index/goods009.jpg'},
-        {name: "优质牛肉特价", num: 1, price: 10.00,origPrice: 23.00,imgsrc:'src/img/index/goods007.jpg'},
+        {name: "新鲜小黄鱼特惠", num: 1, price: 199.00, origPrice: 223.00, imgsrc: 'src/img/index/goods008.jpg'},
+        {name: "豆腐干2kg装", num: 1, price: 139.00, origPrice: 243.00, imgsrc: 'src/img/index/goods009.jpg'},
+        {name: "优质牛肉特价", num: 1, price: 10.00, origPrice: 23.00, imgsrc: 'src/img/index/goods007.jpg'},
     ];
-    $scope.toggle = function($event){
+    $scope.toggle = function ($event) {
         var sign = $event.target.innerHTML;
-        if(sign === '编辑'){
+        if (sign === '编辑') {
             $event.target.innerHTML = '完成';
             $scope.editShow = true;
-        }else{
+        } else {
             $event.target.innerHTML = '编辑';
             $scope.editShow = false;
         }
@@ -38,13 +52,13 @@ app.controller('CartController',function($scope){
     }
 
 
-    $scope.AddNum = function(index){
-        $scope.items[index].num ++ ;
+    $scope.AddNum = function (index) {
+        $scope.items[index].num++;
     }
-    $scope.SubNum = function(index){
-        if($scope.items[index].num > 1){
-            $scope.items[index].num -- ;
-        }else if($scope.items[index].num === 1){
+    $scope.SubNum = function (index) {
+        if ($scope.items[index].num > 1) {
+            $scope.items[index].num--;
+        } else if ($scope.items[index].num === 1) {
             $scope.items.splice(index, 1);
         }
     }

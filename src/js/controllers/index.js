@@ -44,8 +44,22 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
     });
 
     /*添加到购物车,初始化购物车数量*/
-    $scope.content = 1;
-    $scope.addToCart = function (content) {
+    $scope.content = 0;
+    $scope.addToCart = function ($event) {
+        var shopId = $event.target.parentNode.getAttribute('value');
+
+        getData.get(serviceURL.BuyGoodUrl, {
+            params: {
+                id: shopId,
+                count:1,
+            }
+        })
+            .then(function (data) {
+                console.log(data);
+            }, function (data, status, headers, config) {
+                console.log('error!');
+            });
+        console.log('ee');
         $scope.content = $scope.content + 1;
     }
 

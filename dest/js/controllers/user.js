@@ -1,0 +1,1 @@
+app.controller("userController",function(o,e,l,t,n,r){var a=localStorage.getItem("loginState");console.log(a),1===a&&(o.goPath(),console.log("ee"))});

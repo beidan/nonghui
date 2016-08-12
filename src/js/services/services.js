@@ -81,15 +81,31 @@ app.factory('getData', function ($http, $q) {
     }
 
 
+}).factory('isLogin', function ($location) {
+    return {
+        isLogin: function () {
+            var isLogin = localStorage.getItem('loginState');
+            /*未登录*/
+            if (isLogin == 0) {
+                console.log('not login');
+                $location.path('/login');
+            }
+        }
+    }
 }).factory('serviceURL', function () {
     var service = 'http://121.42.190.17:8080/Shop_war/',
         local = 'http://172.16.31.19:8080/Shop/';
+
 
     /*服务器接口*/
     return serviceUrls = {
         "indexUrl": service + 'index',
         'DetailUrl': service + 'Detail',
         'LoginUrl': service + 'login',
+        'RegisterUrl': service + 'register',
+        'LogoutUrl': service + 'logOut',
+        'BuyGoodUrl': service + 'buyGood',
+        'MyCartUrl': service + 'myCart',
     }
     /*本地接口*/
     // return localUrls = {

@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="src/styles/css/address.css"/>
+
+<header>
+    <a href="javascript:history.go(-1);" class="fl">
+        <span class="fa fa-angle-left"></span>
+    </a>
+    <span class="title">我的信息</span>
+</header>
+<form role="form" class="form-horizontal" ng-controller="LoginController">
+
+    <ul class="userForm" ng-controller="userNameController">
+        <li>
+            <input type="text" value="" ng-model="nickname" placeholder="昵称" required readonly/>
+        </li>
+        <li>
+            <input type="text" value="" ng-model="sex" placeholder="性别" required readonly/>
+        </li>
+        <li>
+            <input type="text" value="" ng-model="birthday" placeholder="生日" required readonly/>
+        </li>
+        <li>
+            <input type="text" value="" ng-model="phone" placeholder="手机号码" required readonly/>
+        </li>
+        <li>
+            <input type="text" value="" ng-model="email" placeholder="邮箱" required readonly/>
+        </li>
+        <li>
+            <input type="password" value="" ng-model="password" placeholder="密码" required readonly/>
+        </li>
+        <li>
+            <input type="submit" value="保存" ng-click="save();" class="button"/>
+        </li>
+    </ul>
+</form>
+

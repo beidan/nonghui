@@ -26,6 +26,7 @@ app.controller('registerController', function ($scope, $http, getData, serviceUR
 
 
     $scope.submit = function () {
+
         getData.get(serviceURL.RegisterUrl, {
             params: {
                 phone : $scope.userPhone,
@@ -39,7 +40,7 @@ app.controller('registerController', function ($scope, $http, getData, serviceUR
                 if(data.state == 1){
                     alert('用户已存在!');
                 }else{
-                    console.log('添加用户成功');
+                    alert('添加用户成功');
                 }
             }, function (data, status, headers, config) {
                 console.log('error!');

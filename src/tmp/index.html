@@ -42,7 +42,7 @@
                     <p>
                         <strong class="price">{{::item.price}}</strong>
                     </p>
-                    <a class="addToCart" ng-click=addToCart();><i class="fa fa-shopping-cart"
+                    <a class="addToCart" ng-click=addToCart($event); value="{{::item.id}}"><i class="fa fa-shopping-cart"
                                                                   aria-hidden="true"></i></a>
                 </div>
             </li>

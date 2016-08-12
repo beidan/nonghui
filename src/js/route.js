@@ -19,6 +19,10 @@ var app = angular.module('myApp',['ngRoute']);
                 templateUrl:'src/tmp/detail.html',
                 controller:'DetailController'
             })
+            .when('/userMsg',{
+                templateUrl:'src/tmp/userMsg.html',
+                controller:'LoginController'
+            })
             .when('/cityPick',{
                 templateUrl:'src/tmp/citypick.html',
                 controller:'cityPickController'
@@ -30,6 +34,6 @@ var app = angular.module('myApp',['ngRoute']);
             .when('/address',{templateUrl:'src/tmp/address.html'})
             .when('/user',{templateUrl:'src/tmp/user.html'})
             .otherwise({
-                redirectTo:'/'
+                redirectTo:'/index'
             });
     }]);
