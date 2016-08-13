@@ -324,7 +324,7 @@ footer {
       border: 1px #d2d2d2 solid;
       color: grey;
       outline: none; }
-    .cart .goodsInfor .numberWidget input[type="text"] {
+    .cart .goodsInfor .numberWidget input[type="number"] {
       width: 1rem;
       text-align: center;
       background: none;

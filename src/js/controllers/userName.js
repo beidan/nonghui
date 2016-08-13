@@ -12,8 +12,8 @@ app.controller('userNameController', function ($scope, getData) {
         $scope.password = userData.password;
         $scope.sex = userData.sex;
         $scope.phone = userData.phone;
-        $scope.email = userData.email || '空';
-        $scope.birthday = userData.birthday || '空';
+        $scope.email = userData.email;
+        // $scope.birthday = userData.birthday || '空';
     }
 
 

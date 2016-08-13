@@ -51,7 +51,10 @@ app.controller('DetailController', function ($scope, $location, getData, service
     }).then(function (data) {
         $scope.detail = data.product;
         $scope.imgs = data.imageUrl;
-
+        $scope.comment = data.comments;
+        $scope.len = function () {
+            return $scope.comment.length;
+        }
         $(".swiper-container").swiper({
             loop: true,
             pagination: '.swiper-pagination',
@@ -61,36 +64,22 @@ app.controller('DetailController', function ($scope, $location, getData, service
     });
 
 
-
-    // $scope.imgs = [
-    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
-    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
-    //     {imagesrc: '//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"'},
-    // ];
-    // $scope.detail = {
-    //     title: '纯正天然健康果蔬系列之有机菠菜',
-    //     price: '¥136',
-    //     prePrice: '¥389',
-    //     num: '5',
-    //     weight: '750g',
-    //     introduce: '菠菜又名波斯菜、赤根菜、鹦鹉菜等，属苋科藜亚科菠菜属，一年生草本植物。植物高可达1米，根圆锥状，带红色，较少为白色，叶戟形至卵形，鲜绿色,少数牙齿状裂片。'
-    // };
-    // $scope.comment = [
-    //     {
-    //         owner: '138****3456',
-    //         content: '还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错',
-    //         data: '2015-09-13 14:35'
-    //     }, {
-    //         owner: '158****3556',
-    //         content: '还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错',
-    //         data: '2015-08-13 12:35'
-    //     }, {
-    //         owner: '139****3436',
-    //         content: '还不错评论文字还不错评论文字还不错评文字还不错评论文字还不错',
-    //         data: '2015-09-14 16:35'
-    //     }
-    // ];
-    $scope.len = function () {
-        return $scope.comment.length;
+    $scope.AddNum = function (index) {
+        $scope.detail.num++;
     }
+    $scope.SubNum = function (index) {
+        if ($scope.detail.num > 1) {
+            $scope.detail.num--;
+        }
+    }
+
+
+    $scope.addToCart = function () {
+        console.log('add');
+    }
+
+    $scope.BuyNow = function () {
+        console.log('buy now');
+    }
+
 });

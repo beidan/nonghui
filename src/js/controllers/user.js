@@ -4,7 +4,7 @@ app.controller('userController', function ($scope, $location, serviceURL, getDat
 
     /*获取数据渲染页面*/
     if (userData) {
-        $scope.imgsrc = userData.img;
+        $scope.imgsrc = userData.img || './src/img/user/tx.jpg';
         $scope.nickname = userData.nickname;
     }
 

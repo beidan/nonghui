@@ -5,18 +5,6 @@ app.controller('CartController', function ($scope, isLogin, getData, serviceURL)
     getData.get(serviceURL.MyCartUrl, {})
         .then(function (data) {
             console.log(data);
-            // if (data.state === 0) {
-            //     localStorage.setItem('loginState', 1);
-            //     localStorage.setItem('user_data', JSON.stringify(data.user));
-            //     alert('登陆成功');
-            //     console.log('login');
-            //     $location.path('/index');
-            // } else {
-            //     console.log(data.errorMsg);
-            //     alert(data.errorMsg);
-            //     $scope.userName = '';
-            //     $scope.userPsw = '';
-            // }
         }, function (data, status, headers, config) {
             console.log('error!');
         });

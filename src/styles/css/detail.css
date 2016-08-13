@@ -243,6 +243,7 @@ header em {
 
 .weight {
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 10px 0px; }
 
 .shopTitle {
@@ -250,7 +251,7 @@ header em {
 
 .shopContainer {
   padding: 10px;
-  width: 100%;
+  width: 95%;
   margin: 0px auto;
   text-align: left;
   color: #434343;
@@ -260,8 +261,10 @@ header em {
 .shopContainer p {
   margin-bottom: 15px; }
 
-.detailBox > div {
-  background-color: white; }
+.detailBox {
+  margin-bottom: 100px; }
+  .detailBox > div {
+    background-color: white; }
 
 .btmNav {
   height: 4rem;
@@ -289,3 +292,30 @@ header em {
     background: #64ab5b;
     color: white;
     text-shadow: none; }
+
+.shopCommon {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; }
+
+.commonlist {
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc; }
+  .commonlist .content {
+    margin: 10px 0; }
+
+.starColor {
+  color: red; }
+
+.numberWidget input[type="button"] {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: 1px #d2d2d2 solid;
+  color: grey;
+  outline: none; }
+.numberWidget input[type="number"] {
+  width: 2rem;
+  text-align: center;
+  background: none;
+  border: none; }

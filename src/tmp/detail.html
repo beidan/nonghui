@@ -10,7 +10,7 @@
     </a>
 </header>
 
-    <div ng-controller="DetailController" class="detailBox">
+<div ng-controller="DetailController" class="detailBox">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" ng-repeat="item in imgs">
@@ -28,16 +28,16 @@
                 <del>{{::detail.prePrice}}</del>
             </p>
             <span class="fr">
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                <button type="button" class="btn btn-default disabled">{{::detail.num}}</button>
-                <button type="button" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <div class="btn-group numberWidget" role="group" aria-label="...">
+                <input type="button" value="-" class="minus" ng-click="SubNum($index)"/>
+                <input type="number" ng-model="detail.num"  class="numberChange"/>
+                <input type="button" value="+"  class="plus" ng-click="AddNum($index)"/>
             </div>
         </span>
         </div>
         <div class="weight">
             <span>商品规格</span>
-            <span class="fr">{{::detail.weight}}</span>
+            <span class="fr"><strong>{{::detail.weight}}</strong></span>
         </div>
     </div>
     <div class="shopTitle">
@@ -48,11 +48,22 @@
             <p>{{::detail.introduce}}</p>
         </div>
     </div>
+    <div class="shopCommon">
+        <span class=" font16">商品评价 ({{len()}})</span>
+    </div>
+    <div ng-repeat="item in comment" class="commonlist">
+        <span>{{item.username}}</span><span class="fr"><span class="fa fa-star starColor"></span> {{item.star}}</span>
+        <div class="content">
+            <p>{{item.detail}}</p>
+        </div>
+        <span class="fr">{{item.commentDate}}</span>
+    </div>
 </div>
 
 <aside class="btmNav">
-    <a>加入购物车</a>
-    <a href="#/cart" class="order">立即购买</a>
+    <a ng-click="addToCart()">加入购物车</a>
+    <a class="order" ng-click="BuyNow()">立即购买</a>
+    <!--href="#/cart"-->
 </aside>
 
 

@@ -47,6 +47,10 @@
       height: 2rem;
       outline: none;
     }
+
+    span {
+      @include height(2rem);
+    }
   }
 }
 

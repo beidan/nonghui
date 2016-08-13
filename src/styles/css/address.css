@@ -222,3 +222,6 @@ header {
       width: 100%;
       height: 2rem;
       outline: none; }
+    .userForm li span {
+      height: 2rem;
+      line-height: 2rem; }

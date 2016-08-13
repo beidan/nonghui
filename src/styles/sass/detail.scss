@@ -64,6 +64,7 @@ header em {
 
 .weight {
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 10px 0px;
 }
 
@@ -73,7 +74,7 @@ header em {
 
 .shopContainer {
   padding: 10px;
-  width: 100%;
+  width: 95%;
   margin: 0px auto;
   text-align: left;
   color: #434343;
@@ -86,6 +87,7 @@ header em {
 }
 
 .detailBox {
+  margin-bottom: 100px;
   > div {
     background-color: white;
   }
@@ -119,5 +121,42 @@ header em {
     background: #64ab5b;
     color: white;
     text-shadow: none;
+  }
+}
+
+.shopCommon {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.commonlist {
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+
+  .content {
+    margin: 10px 0;
+  }
+}
+
+.starColor {
+  color: red;
+}
+
+.numberWidget {
+  input[type="button"] {
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: 1px #d2d2d2 solid;
+    color: grey;
+    outline: none;
+  }
+
+  input[type="number"] {
+    width: 2rem;
+    text-align: center;
+    background: none;
+    border: none;
   }
 }

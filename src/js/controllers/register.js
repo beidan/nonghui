@@ -1,4 +1,4 @@
-app.controller('registerController', function ($scope, $http, getData, serviceURL) {
+app.controller('registerController', function ($scope, $http,$location, getData, serviceURL) {
 
     // $scope.submit = function () {
         //     $http({
@@ -37,10 +37,12 @@ app.controller('registerController', function ($scope, $http, getData, serviceUR
             }
         })
             .then(function (data) {
-                if(data.state == 1){
-                    alert('用户已存在!');
+                if(data.state == 0){
+                    /*成功添加用户*/
+                    alert(data.hint);
+                    $location.path('/login');
                 }else{
-                    alert('添加用户成功');
+                    alert(data.hint);
                 }
             }, function (data, status, headers, config) {
                 console.log('error!');
