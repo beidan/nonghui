@@ -50,19 +50,22 @@ app.controller('DetailController', function ($scope, $location, getData, service
         },
     }).then(function (data) {
         $scope.detail = data.product;
-        $scope.imgs = data.imageUrl;
+        Silder(data.imageUrl);
         $scope.comment = data.comments;
         $scope.len = function () {
             return $scope.comment.length;
         }
-        $(".swiper-container").swiper({
-            loop: true,
-            pagination: '.swiper-pagination',
-        });
+
     }, function (data, status, headers, config) {
         console.log('error!');
     });
 
+    function Silder(list) {
+        new Slider({
+            'dom': document.getElementById('canvas'),
+            'list': list
+        });
+    }
 
     $scope.AddNum = function (index) {
         $scope.detail.num++;

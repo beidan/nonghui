@@ -1,1 +1,1 @@
-app.controller("userNameController",function(_,e){var o=JSON.parse(localStorage.getItem("user_data"));o&&(_.ಠ_ಠ644=o.img,_.ಠ_ಠ645=o.ಠ_ಠ645,_.ಠ_ಠ647=o.ಠ_ಠ647,_.ಠ_ಠ648=o.ಠ_ಠ648,_.ಠ_ಠ649=o.ಠ_ಠ649,_.ಠ_ಠ650=o.ಠ_ಠ650),_.ಠ_ಠ652=function(){console.log("ee")}});
+app.controller("userNameController",function(_,e){var o=JSON.parse(localStorage.getItem("user_data"));o&&(_.ಠ_ಠ809=o.img,_.ಠ_ಠ810=o.ಠ_ಠ810,_.ಠ_ಠ812=o.ಠ_ಠ812,_.ಠ_ಠ813=o.ಠ_ಠ813,_.ಠ_ಠ814=o.ಠ_ಠ814,_.ಠ_ಠ815=o.ಠ_ಠ815),_.ಠ_ಠ817=function(){console.log("ee")}});

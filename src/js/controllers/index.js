@@ -4,7 +4,7 @@
  * 2.服务器处理时出错  返回信息
  * 3.当数据为空时,前端要显示提示信息。
  * */
-app.controller('IndexController', function ($scope, $location, getData, serviceURL, SortDatas, Location) {
+app.controller('IndexController', function ($scope, $location, $http, getData, serviceURL, SortDatas, Location) {
     /*主页地址*/
     var indexurl = $location.absUrl();
     localStorage.setItem('indexUrl', indexurl);
@@ -37,12 +37,6 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
             });
     }
 
-    /*轮播*/
-    $(".swiper-container").swiper({
-        loop: true,
-        pagination: '.swiper-pagination',
-    });
-
     /*添加到购物车,初始化购物车数量*/
     $scope.content = 0;
     $scope.addToCart = function ($event) {
@@ -51,7 +45,7 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
         getData.get(serviceURL.BuyGoodUrl, {
             params: {
                 id: shopId,
-                count:1,
+                count: 1,
             }
         })
             .then(function (data) {
@@ -59,22 +53,31 @@ app.controller('IndexController', function ($scope, $location, getData, serviceU
             }, function (data, status, headers, config) {
                 console.log('error!');
             });
-        console.log('ee');
         $scope.content = $scope.content + 1;
     }
 
-    /*分类及轮播*/
+    function Silder(list) {
+        new Slider({
+            'dom': document.getElementById('canvas'),
+            'list': list
+        });
+    }
+
+    /*主页轮播*/
+    getData.get(serviceURL.IndexSwiperUrl, {})
+        .then(function (data) {
+            Silder(data.imageUrl);
+        }, function (data, status, headers, config) {
+            console.log('error!');
+        });
+
+    /*分类*/
     $scope.navList = SortDatas;
-    $scope.swiperImg = [
-        {imgsrc: 'src/img/index/slide001.jpg'},
-        {imgsrc: 'src/img/index/slide002.jpg'},
-    ];
 
     /*定位功能*/
     var city = localStorage.getItem('city');
     $scope.city = city;
     Location.getLocation();
-
 
 })
 ;

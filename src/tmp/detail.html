@@ -11,14 +11,7 @@
 </header>
 
 <div ng-controller="DetailController" class="detailBox">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" ng-repeat="item in imgs">
-                <img ng-src="{{item.imageUrl}}" alt="shop img"/>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
+    <div id="canvas"></div>
 
     <div class="shopNum">
         <h4>{{::detail.title}}</h4>
@@ -30,8 +23,8 @@
             <span class="fr">
             <div class="btn-group numberWidget" role="group" aria-label="...">
                 <input type="button" value="-" class="minus" ng-click="SubNum($index)"/>
-                <input type="number" ng-model="detail.num"  class="numberChange"/>
-                <input type="button" value="+"  class="plus" ng-click="AddNum($index)"/>
+                <input type="number" ng-model="detail.num" class="numberChange"/>
+                <input type="button" value="+" class="plus" ng-click="AddNum($index)"/>
             </div>
         </span>
         </div>

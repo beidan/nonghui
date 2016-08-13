@@ -106,6 +106,7 @@ app.factory('getData', function ($http, $q) {
         'LogoutUrl': service + 'logOut',
         'BuyGoodUrl': service + 'buyGood',
         'MyCartUrl': service + 'myCart',
+        'IndexSwiperUrl' : service + 'getImage'
     }
     /*本地接口*/
     // return localUrls = {

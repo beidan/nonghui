@@ -2,59 +2,51 @@
 
 <head-nav></head-nav>
 <div ng-controller="IndexController">
-
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" ng-repeat="item in swiperImg">
-            <img ng-src="{{item.imgsrc}}" alt="shop img"/>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
-
-<ul class="categoryLiIcon">
-    <li ng-repeat="item in navList">
-        <a href="#/asort">
-            <img ng-src="{{::item.imgsrc}}"/>
-            <em>{{::item.name}}</em>
+    <div id="canvas"></div>
+    <ul class="categoryLiIcon">
+        <li ng-repeat="item in navList">
+            <a href="#/asort">
+                <img ng-src="{{::item.imgsrc}}"/>
+                <em>{{::item.name}}</em>
+            </a>
+        </li>
+    </ul>
+    <dl class="tab_proList">
+        <dt>
+            <span ng-click="toggleList($event)">热销</span>
+            <span ng-click="toggleList($event)">新品</span>
+            <span ng-click="toggleList($event)">打折</span>
+        </dt>
+        <dd ng-repeat="item in cateData">
+            <ul>
+                <li>
+                    <a href="#detail?id={{::item.id}}" class="goodsPic">
+                        <img ng-src="{{::item.image}}"/>
+                    </a>
+                    <div class="goodsInfor">
+                        <h4>
+                            <a href="#detail?id={{::item.id}}">{{::item.title}}</a>
+                        </h4>
+                        <p>
+                            <del>{{::item.prePrice}}</del>
+                        </p>
+                        <p>
+                            <strong class="price">{{::item.price}}</strong>
+                        </p>
+                        <a class="addToCart" ng-click=addToCart($event); value="{{::item.id}}"><i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+    <div class="hoverCart">
+        <a href="#/cart">
+            <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+            <a href="#cart">{{content}}</a>
         </a>
-    </li>
-</ul>
-<dl class="tab_proList" >
-    <dt>
-        <span ng-click="toggleList($event)">热销</span>
-        <span ng-click="toggleList($event)">新品</span>
-        <span ng-click="toggleList($event)">打折</span>
-    </dt>
-    <dd ng-repeat="item in cateData">
-        <ul>
-            <li>
-                <a href="#detail?id={{::item.id}}" class="goodsPic">
-                    <img ng-src="{{::item.image}}"/>
-                </a>
-                <div class="goodsInfor">
-                    <h4>
-                        <a href="#detail?id={{::item.id}}">{{::item.title}}</a>
-                    </h4>
-                    <p>
-                        <del>{{::item.prePrice}}</del>
-                    </p>
-                    <p>
-                        <strong class="price">{{::item.price}}</strong>
-                    </p>
-                    <a class="addToCart" ng-click=addToCart($event); value="{{::item.id}}"><i class="fa fa-shopping-cart"
-                                                                  aria-hidden="true"></i></a>
-                </div>
-            </li>
-        </ul>
-    </dd>
-</dl>
-<div class="hoverCart">
-    <a href="#/cart">
-        <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
-        <a href="#cart">{{content}}</a>
-    </a>
-</div>
+    </div>
 </div>
 
 <foot-nav></foot-nav>
