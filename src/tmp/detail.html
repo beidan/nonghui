@@ -6,7 +6,7 @@
     </a>
     <span class="title">产品详情</span>
     <a href="#/cart" class="cart fr">
-        <span class="fa fa-shopping-cart" aria-hidden="true"></span><em>0</em>
+        <span class="fa fa-shopping-cart" aria-hidden="true"></span><strong>{{cartCount}}</strong>
     </a>
 </header>
 
@@ -23,7 +23,7 @@
             <span class="fr">
             <div class="btn-group numberWidget" role="group" aria-label="...">
                 <input type="button" value="-" class="minus" ng-click="SubNum($index)"/>
-                <input type="number" ng-model="detail.num" class="numberChange"/>
+                <input type="number" ng-model="count" class="numberChange"/>
                 <input type="button" value="+" class="plus" ng-click="AddNum($index)"/>
             </div>
         </span>
@@ -54,8 +54,7 @@
 </div>
 
 <aside class="btmNav">
-    <a ng-click="addToCart()">加入购物车</a>
-    <a class="order" ng-click="BuyNow()">立即购买</a>
+    <a ng-click="addToCart()" class="order">加入购物车</a>
     <!--href="#/cart"-->
 </aside>
 

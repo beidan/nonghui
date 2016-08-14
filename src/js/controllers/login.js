@@ -16,6 +16,7 @@ app.controller('LoginController', function ($scope, $http, $location, getData, s
                 if (data.state === 0) {
                     localStorage.setItem('loginState', 1);
                     localStorage.setItem('user_data', JSON.stringify(data.user));
+                    localStorage.setItem('cartCount', JSON.stringify(data.cartCount));
                     alert('登陆成功');
                     console.log('login');
                     $location.path('/index');

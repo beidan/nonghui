@@ -13,19 +13,21 @@
         <a class="edit" ng-click="toggle($event)">编辑</a>
     </dt>
     <dd ng-repeat = 'item in items'>
-        <a href="product.html" class="goodsPic"><img ng-src="{{::item.imgsrc}}"/></a>
+
+        <a href="#detail?id={{::item.productId}}" class="goodsPic"><img ng-src="{{::item.img}}"/></a>
         <div class="goodsInfor">
             <h4>
-                <a href="product.html">{{::item.name}}</a>
-                <span>{{::item.num}}</span>
+                <span class="hide">{{::item.id}}</span>
+                <a href="product.html">{{::item.productName}}</a>
+                <span>{{item.count}}</span>
             </h4>
             <div class="priceArea">
-                <strong>{{::item.price}}</strong>
-                <del>{{::item.origPrice}}</del>
+                <strong>{{::item.productPrices}}</strong>
+                <del>{{::item.preprice}}</del>
             </div>
             <div class="numberWidget"  ng-show="editShow">
                 <input type="button" value="-" class="minus" ng-click="SubNum($index)"/>
-                <input type="number" ng-model="item.num"  class="numberChange"/>
+                <input type="number" ng-model="item.count"  class="numberChange"/>
                 <input type="button" value="+"  class="plus" ng-click="AddNum($index)"/>
             </div>
         </div>

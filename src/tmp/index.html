@@ -5,7 +5,7 @@
     <div id="canvas"></div>
     <ul class="categoryLiIcon">
         <li ng-repeat="item in navList">
-            <a href="#/asort">
+            <a href="#/asort?cate={{::item.value}}">
                 <img ng-src="{{::item.imgsrc}}"/>
                 <em>{{::item.name}}</em>
             </a>

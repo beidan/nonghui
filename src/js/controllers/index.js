@@ -37,27 +37,38 @@ app.controller('IndexController', function ($scope, $location, $http, getData, s
             });
     }
 
+    /*判断是否登录*/
+    var isLogin = localStorage.getItem('loginState');
+    var cartCount = localStorage.getItem('cartCount');
+    if (isLogin == 0) {
+        $scope.content = 0;
+    }
+    else {
+        $scope.content = parseInt(cartCount);
+    }
+
+
     /*添加到购物车,初始化购物车数量*/
     var userData = JSON.parse(localStorage.getItem('user_data'));
-    $scope.content = 0;
     $scope.addToCart = function ($event) {
         var shopId = $event.target.parentNode.getAttribute('value');
-
-        console.log(userData.id);
-
-        // getData.get(serviceURL.BuyGoodUrl, {
-        //     params: {
-        //         userId:userData.id,
-        //         id: shopId,
-        //         count: 1,
-        //     }
-        // })
-        //     .then(function (data) {
-        //         console.log(data);
-        //     }, function (data, status, headers, config) {
-        //         console.log('error!');
-        //     });
-        $scope.content = $scope.content + 1;
+        getData.get(serviceURL.BuyGoodUrl, {
+            params: {
+                userId: userData.id,
+                id: shopId,
+                count: 1,
+            }
+        }).then(function (data) {
+            if (data.status == 0) {
+                $scope.content = $scope.content + 1;
+                localStorage.setItem('cartCount', $scope.content);
+            } else {
+                console.log('添加失败!');
+                alert('添加失败');
+            }
+        }, function (data, status, headers, config) {
+            console.log('error!');
+        });
     }
 
     function Silder(list) {
@@ -71,7 +82,7 @@ app.controller('IndexController', function ($scope, $location, $http, getData, s
     getData.get(serviceURL.IndexSwiperUrl, {})
         .then(function (data) {
             Silder(data.imageUrl);
-        }, function (data, status, headers, config) {
+        }, function () {
             console.log('error!');
         });
 

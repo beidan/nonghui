@@ -7,43 +7,7 @@
  *
  * */
 
-// $(function () {
-//     // var mySwiper = new Swiper('.swiper-container', {
-//     //     autoplay: 5000,//可选选项，自动滑动
-//     // })
-//
-//         var mySwiper = new Swiper ('.swiper-container', {
-//             direction: 'vertical',//水平还是垂直方向
-//             loop: true,//循环
-// // 如果需要分页器
-//             pagination: '.swiper-pagination',
-// // 如果需要前进后退按钮
-//             nextButton: '.swiper-button-next',
-//             prevButton: '.swiper-button-prev',
-// // 如果需要滚动条
-//             scrollbar: '.swiper-scrollbar',
-//         })
-//         // $(".swiper-container").swiper({
-//         //     autoplay : 3000,
-//         //     speed:300,
-//         //     draggable : false,
-//         // });
-//
-//     $(".swiper-container").swiper({
-//         direction: 'vertical',//水平还是垂直方向
-//         loop: true,//循环
-// // 如果需要分页器
-//         pagination: '.swiper-pagination',
-// // 如果需要前进后退按钮
-//         nextButton: '.swiper-button-next',
-//         prevButton: '.swiper-button-prev',
-// // 如果需要滚动条
-//         scrollbar: '.swiper-scrollbar',
-//     });
-// });
-
 app.controller('DetailController', function ($scope, $location, getData, serviceURL) {
-
     getData.get(serviceURL.DetailUrl, {
         params: {
             id: $location.search().id
@@ -59,6 +23,15 @@ app.controller('DetailController', function ($scope, $location, getData, service
     }, function (data, status, headers, config) {
         console.log('error!');
     });
+    /*判断是否登录*/
+    var isLogin = localStorage.getItem('loginState');
+    var cartCount = localStorage.getItem('cartCount');
+    if (isLogin == 0) {
+        $scope.cartCount = 0;
+    }
+    else {
+        $scope.cartCount = parseInt(cartCount);
+    }
 
     function Silder(list) {
         new Slider({
@@ -67,22 +40,38 @@ app.controller('DetailController', function ($scope, $location, getData, service
         });
     }
 
+    $scope.count = 1;
     $scope.AddNum = function (index) {
-        $scope.detail.num++;
+        $scope.count++;
     }
     $scope.SubNum = function (index) {
-        if ($scope.detail.num > 1) {
-            $scope.detail.num--;
+        if ($scope.count > 1) {
+            $scope.count--;
         }
     }
 
-
+    var userData = JSON.parse(localStorage.getItem('user_data'));
     $scope.addToCart = function () {
+        getData.get(serviceURL.BuyGoodUrl, {
+            params: {
+                userId: userData.id,
+                id: $location.search().id,
+                count: $scope.count,
+            }
+        }).then(function (data) {
+            if (data.status == 0) {
+                $scope.cartCount = data.cartCount;
+                localStorage.setItem('cartCount', data.cartCount);
+                console.log('加入购物车成功!');
+            } else {
+                console.log('添加失败!');
+                alert('添加失败');
+            }
+        }, function (data, status, headers, config) {
+            console.log('error!');
+        });
         console.log('add');
     }
 
-    $scope.BuyNow = function () {
-        console.log('buy now');
-    }
 
 });

@@ -6,25 +6,27 @@
     </a>
     <span class="title">确认订单</span>
 </header>
+<div ng-controller="confirmOrderController">
+    <aside class="confirmAddr">
+        <p>
+            <span>收货人：{{::address.name}}</span>
+            <span>{{::address.phone}}</span>
+        </p>
+        <address>{{::address.detailAddr}}</address>
+        <a href="#/address" class="iconfont">&#60;</a>
+    </aside>
+    <!--<dl class="payment">-->
+    <!--<dt>选择支付方式</dt>-->
+    <!--<dd>-->
+    <!--<label><input type="radio" name="pay"/>支付宝支付</label>-->
+    <!--<label><input type="radio" name="pay"/>微信支付</label>-->
+    <!--</dd>-->
+    <!--</dl>-->
+    <aside class="btmNav">
+        <a>合计：￥{{::TotalPrice}}</a>
+        <a>提交订单</a>
+    </aside>
 
-<aside class="confirmAddr">
-    <p>
-        <span>收货人：DeathGhost</span>
-        <span>1830927**73</span>
-    </p>
-    <address>陕西省西安市雁塔区某某大厦</address>
-    <a href="#/address" class="iconfont">&#60;</a>
-</aside>
-<dl class="payment">
-    <dt>选择支付方式</dt>
-    <dd>
-        <label><input type="radio" name="pay"/>支付宝支付</label>
-        <label><input type="radio" name="pay"/>微信支付</label>
-    </dd>
-</dl>
-<aside class="btmNav">
-    <a>合计：￥0.00</a>
-    <a>提交订单</a>
-</aside>
+</div>
 
 

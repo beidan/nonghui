@@ -1,19 +1,17 @@
-app.controller('AsortController',function($scope,SortDatas){
+app.controller('AsortController', function ($scope, $location, SortDatas, getData, serviceURL) {
 
     $scope.navList = SortDatas;
 
+    getData.get(serviceURL.CateUrl, {
+        params: {
+            cate: $location.search().cate,
+        }
+    }).then(function (data) {
+        $scope.list = data.items;
 
-    $scope.list1 = [
-        {imgsrc: "src/img/index/slide001.jpg"},
-        {imgsrc: "src/img/index/slide001.jpg"},
-        {imgsrc: "src/img/index/slide001.jpg"},
-        {imgsrc: "src/img/index/slide001.jpg"},
-    ];
-    $scope.list2 = [
-        {imgsrc: "src/img/index/slide002.jpg"},
-        {imgsrc: "src/img/index/slide002.jpg"},
-        {imgsrc: "src/img/index/slide002.jpg"},
-        {imgsrc: "src/img/index/slide002.jpg"},
-    ];
+
+    }, function (data, status, headers, config) {
+        console.log('error!');
+    });
 
 });

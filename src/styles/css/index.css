@@ -5,6 +5,12 @@
 .fr {
   float: right; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 /*超出显示……*/
 .ellipsis {
   text-overflow: ellipsis;
@@ -372,6 +378,12 @@ small, weak {
 
 .fr {
   float: right; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
 
 /*超出显示……*/
 .ellipsis {

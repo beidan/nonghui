@@ -3,24 +3,27 @@ app.controller('CartController', function ($scope, isLogin, getData, serviceURL)
     isLogin.isLogin();
 
     var userData = JSON.parse(localStorage.getItem('user_data'));
-    console.log(userData.id);
 
+    /*获取购物车数据*/
     getData.get(serviceURL.MyCartUrl, {
         params: {
             userId: userData.id,
         }
-    })
-        .then(function (data) {
-            console.log(data);
-        }, function () {
-            console.log('error!');
-        });
+    }).then(function (data) {
+        $scope.items = data.orderProducts;
+        //计算总价格
+        $scope.totalPrice = function () {
+            var total = 0, i,
+                len = $scope.items.length;
+            for (i = 0; i < len; i++) {
+                total += $scope.items[i].productPrices * $scope.items[i].count;
+            }
+            return total;
+        };
+    }, function () {
+        console.log('error!');
+    });
 
-    $scope.items = [
-        {name: "新鲜小黄鱼特惠", num: 1, price: 199.00, origPrice: 223.00, imgsrc: 'src/img/index/goods008.jpg'},
-        {name: "豆腐干2kg装", num: 1, price: 139.00, origPrice: 243.00, imgsrc: 'src/img/index/goods009.jpg'},
-        {name: "优质牛肉特价", num: 1, price: 10.00, origPrice: 23.00, imgsrc: 'src/img/index/goods007.jpg'},
-    ];
     $scope.toggle = function ($event) {
         var sign = $event.target.innerHTML;
         if (sign === '编辑') {
@@ -31,30 +34,54 @@ app.controller('CartController', function ($scope, isLogin, getData, serviceURL)
             $scope.editShow = false;
         }
     }
-    //计算总价格
-    $scope.totalPrice = function () {
-        var total = 0, i,
-            len = $scope.items.length;
-        for (i = 0; i < len; i++) {
-            total += $scope.items[i].price * $scope.items[i].num;
-        }
-        return total;
-    };
-
 
     $scope.remove = function (index) {
-        $scope.items.splice(index, 1);
+        getData.get(serviceURL.RemoveGoodUrl, {
+            params: {
+                id: $scope.items[index].id,
+            }
+        }).then(function (data) {
+            $scope.items.splice(index, 1);
+            localStorage.setItem('cartCount', data.cartCount);
+        }, function () {
+            console.log('error!');
+        });
     }
-
 
     $scope.AddNum = function (index) {
-        $scope.items[index].num++;
+        getData.get(serviceURL.AddCountUrl, {
+            params: {
+                id: $scope.items[index].id,
+            }
+        }).then(function (data) {
+            if (data.status == 0) {
+                $scope.items[index].count++;
+                localStorage.setItem('cartCount', data.cartCount);
+            } else {
+                console.log('添加数量失败!');
+                alert('添加数量失败');
+            }
+        }, function () {
+            console.log('error!');
+        });
+
     }
     $scope.SubNum = function (index) {
-        if ($scope.items[index].num > 1) {
-            $scope.items[index].num--;
-        } else if ($scope.items[index].num === 1) {
-            $scope.items.splice(index, 1);
+        if ($scope.items[index].count > 1) {
+            getData.get(serviceURL.SubCountUrl, {
+                params: {
+                    id: $scope.items[index].id,
+                }
+            }).then(function (data) {
+                $scope.items[index].count--;
+                localStorage.setItem('cartCount', data.cartCount);
+            }, function () {
+                console.log('error!');
+            });
+        } else if ($scope.items[index].count === 1) {
+            alert('数量不能为0');
+            console.log('数量不能为0');
         }
+
     }
 });

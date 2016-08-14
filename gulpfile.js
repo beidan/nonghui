@@ -54,7 +54,7 @@ gulp.task('js', function() {
 
 //编译scss
 gulp.task('sass', function () {
-    return sass('src/styles/sass/*.scss')
+    return sass('src/styles/sass/**/*.scss')
         .on('error', sass.logError)
         .pipe(gulp.dest('src/styles/css'))
         .pipe(notify({ message: 'scss task ok' }));

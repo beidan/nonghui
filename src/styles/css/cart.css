@@ -5,6 +5,12 @@
 .fr {
   float: right; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 /*超出显示……*/
 .ellipsis {
   text-overflow: ellipsis;
@@ -325,7 +331,7 @@ footer {
       color: grey;
       outline: none; }
     .cart .goodsInfor .numberWidget input[type="number"] {
-      width: 1rem;
+      width: 3rem;
       text-align: center;
       background: none;
       border: none; }

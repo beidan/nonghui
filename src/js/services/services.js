@@ -106,7 +106,13 @@ app.factory('getData', function ($http, $q) {
         'LogoutUrl': service + 'logOut',
         'BuyGoodUrl': service + 'buyGood',
         'MyCartUrl': service + 'myCart',
-        'IndexSwiperUrl' : service + 'getImage'
+        'IndexSwiperUrl' : service + 'getImage',
+        'RemoveGoodUrl': service + 'removeGood',
+        'AddCountUrl' : service +'addCount',
+        'SubCountUrl':service + 'subCount',
+        'AddAddressUrl':service + 'addAddress',
+        'CreateOrderUrl' : service + 'CreateOrder',
+        'CateUrl':service + 'Cate'
     }
     /*本地接口*/
     // return localUrls = {
@@ -120,13 +126,13 @@ app.factory('getData', function ($http, $q) {
 }).factory('SortDatas', function () {
 
     return SortDatas = [
-        {name: '蔬菜水果', imgsrc: "src/img/index/menu_bg_01.png"},
-        {name: '禽蛋肉类', imgsrc: "src/img/index/menu_bg_06.png"},
-        {name: '水产火锅', imgsrc: "src/img/index/menu_bg_10.png"},
-        {name: '熟食豆制', imgsrc: "src/img/index/menu_bg_14.png"},
-        {name: '米面粮油', imgsrc: "src/img/index/menu_bg_03.png"},
-        {name: '调料干货', imgsrc: "src/img/index/menu_bg_07.png"},
-        {name: '餐厨用品', imgsrc: "src/img/index/menu_bg_11.png"},
-        {name: '常购品', imgsrc: "src/img/index/menu_bg_15.png"},
+        {name: '水果', imgsrc: "src/img/index/menu_bg_01.png",value :'fruits'},
+        {name: '种子', imgsrc: "src/img/index/menu_bg_14.png",value :'seed'},
+        {name: '肥料', imgsrc: "src/img/index/menu_bg_07.png",value :'fertilizer'},
+        {name: '蔬菜', imgsrc: "src/img/index/menu_bg_15.png",value :'vegetables'},
     ]
 });
+// {name: '餐厨用品', imgsrc: "src/img/index/menu_bg_11.png"},
+// {name: '米面粮油', imgsrc: "src/img/index/menu_bg_03.png"},
+// {name: '水产火锅', imgsrc: "src/img/index/menu_bg_10.png"},
+// {name: '禽蛋肉类', imgsrc: "src/img/index/menu_bg_06.png"},
