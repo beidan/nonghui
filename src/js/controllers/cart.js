@@ -2,10 +2,17 @@ app.controller('CartController', function ($scope, isLogin, getData, serviceURL)
 
     isLogin.isLogin();
 
-    getData.get(serviceURL.MyCartUrl, {})
+    var userData = JSON.parse(localStorage.getItem('user_data'));
+    console.log(userData.id);
+
+    getData.get(serviceURL.MyCartUrl, {
+        params: {
+            userId: userData.id,
+        }
+    })
         .then(function (data) {
             console.log(data);
-        }, function (data, status, headers, config) {
+        }, function () {
             console.log('error!');
         });
 

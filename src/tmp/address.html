@@ -7,13 +7,28 @@
     </a>
     <span class="title">我的地址</span>
 </header>
-<ul class="userForm" ng-controller="addressController">
+<ul class="userForm" ng-controller="addressController" id="address">
     <li>
-        <input type="text" value="DeathGhost"/>
+        <span>收货人姓名</span>
+        <input type="text" value="beidan" ng-model="nickname"  readonly/>
     </li>
     <li>
-        <a href="#/cityPick">{{::city}}</a>
+        <span>收货人手机</span>
+        <input type="text" value="phone" ng-model="phone"  readonly/>
     </li>
+    <li>
+        <span>收货地址 </span>
+        <a href="#/cityPick" readonly>{{::city}}</a>
+    </li>
+    <li>
+        <span>邮编</span>
+        <input type="number" value="515000" ng-model="Zipcode" readonly/>
+    </li>
+    <!--<li>-->
+        <!--<span>收货地址</span>-->
+        <!--<input type="text" value="beidan"/>-->
+        <!--<a href="#/cityPick">{{::city}}</a>-->
+    <!--</li>-->
     <!--<li>-->
         <!--<select>-->
             <!--<option>西安市</option>-->
@@ -25,10 +40,10 @@
         <!--</select>-->
     <!--</li>-->
     <li>
-        <textarea>省体育场220号</textarea>
+        <span>详细地址</span>
+        <textarea readonly ng-model="Detailaddr" class="detailaddr">省体育场220号</textarea>
     </li>
     <li>
-        <input type="button" value="修改地址" class="button"/>
+        <input type="button" value="修改地址" class="button" ng-click="save($event)"/>
     </li>
 </ul>
-
