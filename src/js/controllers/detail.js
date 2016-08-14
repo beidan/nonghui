@@ -26,7 +26,7 @@ app.controller('DetailController', function ($scope, $location, getData, service
     /*判断是否登录*/
     var isLogin = localStorage.getItem('loginState');
     var cartCount = localStorage.getItem('cartCount');
-    if (isLogin == 0) {
+    if (isLogin == 0 || isLogin == null) {
         $scope.cartCount = 0;
     }
     else {
@@ -52,24 +52,28 @@ app.controller('DetailController', function ($scope, $location, getData, service
 
     var userData = JSON.parse(localStorage.getItem('user_data'));
     $scope.addToCart = function () {
-        getData.get(serviceURL.BuyGoodUrl, {
-            params: {
-                userId: userData.id,
-                id: $location.search().id,
-                count: $scope.count,
-            }
-        }).then(function (data) {
-            if (data.status == 0) {
-                $scope.cartCount = data.cartCount;
-                localStorage.setItem('cartCount', data.cartCount);
-                console.log('加入购物车成功!');
-            } else {
-                console.log('添加失败!');
-                alert('添加失败');
-            }
-        }, function (data, status, headers, config) {
-            console.log('error!');
-        });
+        if (userData !== null) {
+            getData.get(serviceURL.BuyGoodUrl, {
+                params: {
+                    userId: userData.id,
+                    id: $location.search().id,
+                    count: $scope.count,
+                }
+            }).then(function (data) {
+                if (data.status == 0) {
+                    $scope.cartCount = data.cartCount;
+                    localStorage.setItem('cartCount', data.cartCount);
+                    console.log('加入购物车成功!');
+                } else {
+                    console.log('添加失败!');
+                    alert('添加失败');
+                }
+            }, function (data, status, headers, config) {
+                console.log('error!');
+            });
+        } else {
+            console.log('对不起,请先登录!');
+        }
         console.log('add');
     }
 

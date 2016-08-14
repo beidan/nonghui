@@ -12,7 +12,27 @@ var 
     notify = require('gulp-notify'),//提示信息
     obfuscate = require('gulp-obfuscate'), //混淆js
     sass = require('gulp-ruby-sass');
+var browserSync = require('browser-sync').create();  //自动同步
 
+
+// 自动同步
+gulp.task('browser-sync',function () {
+    var files = [
+        '**/*.html',
+        '**/*.css',
+        '**/*.js'
+    ];
+//代理模式（本地服务器）
+    browserSync.init(files,{
+        proxy: 'http://localhost:63342/nonghui/extend.html',
+    });
+//本地静态文件
+//     browserSync.init(files, {
+//         server: {
+//             baseDir: './src'   //该路径到html的文件夹目录
+//         }
+//     });
+});
 
 // 压缩html,清除html注释
 gulp.task('html', function() {
@@ -67,9 +87,12 @@ gulp.task('watch', function() {
 
 });
 
+
+
+
 // 默认任务
 gulp.task('default', function(){
-    gulp.run('sass','js','watch');
+    gulp.run('sass','js','browser-sync','watch');
 
     // Watch .scss files
 

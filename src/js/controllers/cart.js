@@ -3,26 +3,27 @@ app.controller('CartController', function ($scope, isLogin, getData, serviceURL)
     isLogin.isLogin();
 
     var userData = JSON.parse(localStorage.getItem('user_data'));
-
-    /*获取购物车数据*/
-    getData.get(serviceURL.MyCartUrl, {
-        params: {
-            userId: userData.id,
-        }
-    }).then(function (data) {
-        $scope.items = data.orderProducts;
-        //计算总价格
-        $scope.totalPrice = function () {
-            var total = 0, i,
-                len = $scope.items.length;
-            for (i = 0; i < len; i++) {
-                total += $scope.items[i].productPrices * $scope.items[i].count;
+    // /*获取购物车数据*/
+    if(userData !== null){
+        getData.get(serviceURL.MyCartUrl, {
+            params: {
+                userId: userData.id,
             }
-            return total;
-        };
-    }, function () {
-        console.log('error!');
-    });
+        }).then(function (data) {
+            $scope.items = data.orderProducts;
+            //计算总价格
+            $scope.totalPrice = function () {
+                var total = 0, i,
+                    len = $scope.items.length;
+                for (i = 0; i < len; i++) {
+                    total += $scope.items[i].productPrices * $scope.items[i].count;
+                }
+                return total;
+            };
+        }, function () {
+            console.log('error!');
+        });
+    }
 
     $scope.toggle = function ($event) {
         var sign = $event.target.innerHTML;

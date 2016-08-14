@@ -86,7 +86,7 @@ app.factory('getData', function ($http, $q) {
         isLogin: function () {
             var isLogin = localStorage.getItem('loginState');
             /*未登录*/
-            if (isLogin == 0) {
+            if (isLogin == 0 || isLogin == null) {
                 console.log('not login');
                 $location.path('/login');
             }

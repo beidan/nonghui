@@ -40,7 +40,8 @@ app.controller('IndexController', function ($scope, $location, $http, getData, s
     /*判断是否登录*/
     var isLogin = localStorage.getItem('loginState');
     var cartCount = localStorage.getItem('cartCount');
-    if (isLogin == 0) {
+
+    if (isLogin == 0 || isLogin == null) {
         $scope.content = 0;
     }
     else {
@@ -50,26 +51,32 @@ app.controller('IndexController', function ($scope, $location, $http, getData, s
 
     /*添加到购物车,初始化购物车数量*/
     var userData = JSON.parse(localStorage.getItem('user_data'));
+
     $scope.addToCart = function ($event) {
         var shopId = $event.target.parentNode.getAttribute('value');
-        getData.get(serviceURL.BuyGoodUrl, {
-            params: {
-                userId: userData.id,
-                id: shopId,
-                count: 1,
-            }
-        }).then(function (data) {
-            if (data.status == 0) {
-                $scope.content = $scope.content + 1;
-                localStorage.setItem('cartCount', $scope.content);
-            } else {
-                console.log('添加失败!');
-                alert('添加失败');
-            }
-        }, function (data, status, headers, config) {
-            console.log('error!');
-        });
+        if (userData !== null) {
+            getData.get(serviceURL.BuyGoodUrl, {
+                params: {
+                    userId: userData.id,
+                    id: shopId,
+                    count: 1,
+                }
+            }).then(function (data) {
+                if (data.status == 0) {
+                    $scope.content = $scope.content + 1;
+                    localStorage.setItem('cartCount', $scope.content);
+                } else {
+                    console.log('添加失败!');
+                    alert('添加失败');
+                }
+            }, function (data, status, headers, config) {
+                console.log('error!');
+            });
+        } else {
+            console.log('对不起,请先登录!');
+        }
     }
+
 
     function Silder(list) {
         new Slider({
@@ -90,9 +97,9 @@ app.controller('IndexController', function ($scope, $location, $http, getData, s
     $scope.navList = SortDatas;
 
     /*定位功能*/
-    var city = localStorage.getItem('city');
-    $scope.city = city;
-    Location.getLocation();
+    // var city = localStorage.getItem('city');
+    // $scope.city = city;
+    // Location.getLocation();
 
 })
 ;
