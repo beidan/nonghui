@@ -1,0 +1,1 @@
+app.controller("confirmOrderController",function(e,r,o,t,a){JSON.parse(localStorage.getItem("user_data"));e.ಠ_ಠ369={name:"DeathGhost",phone:"1830927**73",detailAddr:"陕西省西安市雁塔区某某大厦"},e.ಠ_ಠ370=900});

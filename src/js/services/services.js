@@ -112,7 +112,8 @@ app.factory('getData', function ($http, $q) {
         'SubCountUrl':service + 'subCount',
         'AddAddressUrl':service + 'addAddress',
         'CreateOrderUrl' : service + 'CreateOrder',
-        'CateUrl':service + 'Cate'
+        'CateUrl':service + 'Cate',
+        'FindProductUrl':service +'findProduct'
     }
     /*本地接口*/
     // return localUrls = {

@@ -246,3 +246,52 @@ header {
         width: 100%;
         height: 3rem;
         line-height: 3rem; }
+
+dd {
+  margin: .5rem 0; }
+  dd li {
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 1px #f1f1f1 dotted;
+    padding: .5rem 0; }
+    dd li:last-child {
+      margin: 0; }
+
+.goodsPic {
+  width: 10rem;
+  height: 10rem;
+  float: left;
+  overflow: hidden;
+  border: 1px #f8f8f8 solid;
+  border-radius: 2px; }
+  .goodsPic img {
+    width: auto;
+    max-width: 100%;
+    height: 10rem; }
+
+.goodsInfor {
+  margin-left: 10.9rem;
+  position: relative; }
+  .goodsInfor h4 a {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #333; }
+  .goodsInfor p {
+    margin: 1rem 0; }
+    .goodsInfor p .price {
+      color: #64ab5b; }
+      .goodsInfor p .price:before {
+        content: "￥"; }
+    .goodsInfor p del {
+      color: grey; }
+      .goodsInfor p del:before {
+        content: "原价：￥"; }
+  .goodsInfor .addToCart {
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    font-family: 'freshregular';
+    font-size: 3.25rem;
+    color: #f0c600; }
