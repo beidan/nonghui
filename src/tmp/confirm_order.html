@@ -9,10 +9,10 @@
 <div ng-controller="confirmOrderController">
     <aside class="confirmAddr">
         <p>
-            <span>收货人：{{::address.name}}</span>
-            <span>{{::address.phone}}</span>
+            <span>收货人：{{::address.username}}</span>
+            <span>{{::address.userphone}}</span>
         </p>
-        <address>{{::address.detailAddr}}</address>
+        <address>{{::address.area}}</address>
         <a href="#/address" class="iconfont">&#60;</a>
     </aside>
     <!--<dl class="payment">-->
@@ -22,9 +22,25 @@
     <!--<label><input type="radio" name="pay"/>微信支付</label>-->
     <!--</dd>-->
     <!--</dl>-->
+    <dl class="cart">
+        <dd ng-repeat='item in items'>
+            <a class="goodsPic"><img ng-src="{{::item.img}}"/></a>
+            <div class="goodsInfor">
+                <h4>
+                    <span class="hide">{{::item.id}}</span>
+                    <a href="product.html">{{::item.productName}}</a>
+                    <span>{{item.count}}</span>
+                </h4>
+                <div class="priceArea">
+                    <strong>{{::item.productPrices}}</strong>
+                </div>
+            </div>
+        </dd>
+    </dl>
+
     <aside class="btmNav">
-        <a>合计：￥{{::TotalPrice}}</a>
-        <a>提交订单</a>
+        <a>合计：￥{{totalPrice()}}</a>
+        <a ng-click="createOrder()">提交订单</a>
     </aside>
 
 </div>

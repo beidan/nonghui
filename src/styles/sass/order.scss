@@ -45,10 +45,6 @@ $lightGray: #666;
 
     dt {
       @include height(3rem);
-      //height: .85rem;
-      //line-height: .85rem;
-      border-bottom: 1px #d2d2d2 solid;
-
       span {
         &:first-child {
           color: $gray;
@@ -63,13 +59,15 @@ $lightGray: #666;
       margin: 0;
       padding: 1rem 0;
       overflow: hidden;
-      border-bottom: 1px #f4f4f4 solid;
+      border-top: 1px #dadada solid;
+
 
       h5 {
         float: left;
         width: 60%;
         margin: 0;
         color: $lightGray;
+        line-height: 3rem;
       }
       strong {
         float: right;
@@ -140,5 +138,21 @@ $lightGray: #666;
   }
 }
 
+.goodsPic {
+  width: 4rem;
+  height: 3rem;
+  float: left;
+  overflow: hidden;
+  border: 1px #f8f8f8 solid;
+  border-radius: 2px;
 
+  img {
+    width: auto;
+    max-width: 100%;
+    height: 3rem;
+  }
+}
+.orderBox{
+  margin-bottom: 5rem;
+}
 

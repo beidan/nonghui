@@ -221,8 +221,7 @@ header {
       margin: 0; }
     .orderList li dt {
       height: 3rem;
-      line-height: 3rem;
-      border-bottom: 1px #d2d2d2 solid; }
+      line-height: 3rem; }
       .orderList li dt span:first-child {
         color: #999; }
       .orderList li dt span:last-child {
@@ -232,12 +231,13 @@ header {
       margin: 0;
       padding: 1rem 0;
       overflow: hidden;
-      border-bottom: 1px #f4f4f4 solid; }
+      border-top: 1px #dadada solid; }
       .orderList li dd h5 {
         float: left;
         width: 60%;
         margin: 0;
-        color: #666; }
+        color: #666;
+        line-height: 3rem; }
       .orderList li dd strong {
         float: right;
         display: block;
@@ -283,3 +283,18 @@ header {
             color: #0c0; }
             .orderList li dd:nth-last-child(2) span:last-child b:before {
               content: "￥"; }
+
+.goodsPic {
+  width: 4rem;
+  height: 3rem;
+  float: left;
+  overflow: hidden;
+  border: 1px #f8f8f8 solid;
+  border-radius: 2px; }
+  .goodsPic img {
+    width: auto;
+    max-width: 100%;
+    height: 3rem; }
+
+.orderBox {
+  margin-bottom: 5rem; }

@@ -31,9 +31,15 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'src/tmp/search.html',
             controller: 'searchController',
         })
-        .when('/order', {templateUrl: 'src/tmp/order.html'})
+        .when('/order', {
+            templateUrl: 'src/tmp/order.html',
+            controller: 'orderController'
+        })
         .when('/asort', {templateUrl: 'src/tmp/asort.html'})
-        .when('/confirm_order', {templateUrl: 'src/tmp/confirm_order.html'})
+        .when('/confirm_order', {
+            templateUrl: 'src/tmp/confirm_order.html',
+            controller: 'confirmOrderController'
+        })
         .when('/address', {templateUrl: 'src/tmp/address.html'})
         .when('/user', {templateUrl: 'src/tmp/user.html'})
         .otherwise({

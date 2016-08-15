@@ -365,7 +365,8 @@ footer {
   bottom: 0;
   width: 100%;
   display: -webkit-box;
-  display: -moz-box; }
+  display: -moz-box;
+  margin-bottom: .5rem; }
   .btmNav a {
     box-flex: 1;
     -webkit-box-flex: 1;

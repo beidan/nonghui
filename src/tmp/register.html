@@ -1,59 +1,55 @@
 <link rel="stylesheet" type="text/css" href="src/styles/css/login.css"/>
 
-<!--
- login  和 register引用的css一样
--->
-
-
 <header>
     <a href="javascript:history.go(-1);" class="fl">
         <span class="fa fa-angle-left"></span>
     </a>
     <span class="title">注册</span>
 </header>
-<form role="form" class="form-horizontal" ng-controller="registerController">
+<form role="form" name="RegisterForm" ng-submit="submit()" class="form-horizontal" ng-controller="registerController" >
 
-<ul class="formarea">
-    <li>
-        <label class="lit">昵称：</label>
-        <input type="text" placeholder="昵称" class="textbox" required ng-model="userNickname"/>
-    </li>
-    <li>
-        <label class="lit">密码：</label>
-        <input type="password" placeholder="设置密码" class="textbox" required ng-model="userPwd"/>
-    </li>
-    <li>
-        <label class="lit">确认密码：</label>
-        <input type="password" placeholder="确认密码" class="textbox" required/>
-    </li>
-    <li>
-        <label class="lit">邮箱：</label>
-        <input type="email" placeholder="邮箱" class="textbox" required ng-model="userEmail"/>
-    </li>
-    <li>
-        <label class="lit">性别：</label>
-        <input type="text" placeholder="性别" class="textbox" required ng-model="userSex"/>
-    </li>
-    <!--<li>-->
+    <ul class="formarea">
+        <li>
+            <label class="lit">账号：</label>
+            <input type="tel" placeholder="手机号码" class="textbox" required ng-model="user.phone"/>
+        </li>
+        <li>
+            <label class="lit">密码：</label>
+            <input type="password" placeholder="设置密码"  class="textbox" required ng-model="user.pwd" />
+        </li>
+        <li>
+            <label class="lit">确认密码：</label>
+            <input type="password" placeholder="确认密码" class="textbox" required ng-model="user.pwdAgain"/>
+        </li>
+        <li>
+            <label class="lit">昵称：</label>
+            <input type="text" placeholder="昵称" class="textbox" required ng-model="user.nickname"/>
+        </li>
+        <li>
+            <label class="lit">邮箱：</label>
+            <input type="email" placeholder="邮箱" class="textbox" required ng-model="user.email"/>
+        </li>
+        <li>
+            <label class="lit">性别：</label>
+            <input type="text" placeholder="性别" class="textbox" required ng-model="user.sex"/>
+        </li>
+        <!--<li>-->
         <!--<label class="lit">收货人：</label>-->
         <!--<input type="text" placeholder="收件人真实姓名" class="textbox" required ng-model="userName"/>-->
-    <!--</li>-->
-    <li>
-        <label class="lit">联系电话：</label>
-        <input type="tel" placeholder="联系电话" class="textbox" required ng-model="userPhone"/>
-    </li>
-    <!--<li>-->
+        <!--</li>-->
+
+        <!--<li>-->
         <!--<label class="lit">收货地址：</label>-->
         <!--<input type="text" placeholder="区-街道-小区-门牌号" class="textbox"  required ng-model="userName"/>-->
-    <!--</li>-->
-    <li class="liLink">
-        <a href="article.html" class="fl">《用户协议》</a>
-        <a href="#login" class="fr">已有账号，登陆</a>
-    </li>
-    <li>
-        <input type="submit" value="立即注册"  ng-click="submit();" class="button"/>
-    </li>
-</ul>
+        <!--</li>-->
+        <li class="liLink">
+            <a href="#" class="fl">《用户协议》</a>
+            <a href="#login" class="fr">已有账号，登陆</a>
+        </li>
+        <li>
+            <input type="submit" value="立即注册" class="button" />
+        </li>
+    </ul>
 </form>
 
 

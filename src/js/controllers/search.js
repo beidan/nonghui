@@ -1,6 +1,5 @@
 app.controller('searchController', function ($scope, $location, getData, serviceURL) {
 
-
     $scope.searchsth = function(){
         getData.get(serviceURL.FindProductUrl, {
             params: {

@@ -3,15 +3,15 @@
 <section class="formLogo">
     <a href="#/index"><h2>N</h2></a>
 </section>
-<form role="form" class="form-horizontal" ng-controller="LoginController">
+<form role="form" class="form-horizontal" ng-controller="LoginController" name="RegisterForm" ng-submit="submit()">
 <ul class="formarea">
     <li>
         <label class="lit">账号：</label>
-        <input type="number" placeholder="手机号码" class="textbox" required ng-model="userName" />
+        <input type="number" placeholder="手机号码" class="textbox" required ng-model="user.name" />
     </li>
     <li>
         <label class="lit">密码：</label>
-        <input type="password" placeholder="登陆密码" class="textbox" required ng-model="userPsw" />
+        <input type="password" placeholder="登陆密码" class="textbox" required ng-model="user.psw"  />
     </li>
     <li class="liLink lg_liLink">
         <span><label><input type="checkbox"/>记住密码</label></span>
@@ -19,7 +19,7 @@
         <span><a href="#find_pwd">忘记密码?</a></span>
     </li>
     <li>
-        <input type="submit" value="立即登陆" ng-click="submit();" class="button"/>
+        <input type="submit" value="立即登陆" class="button"/>
     </li>
 
 </ul>

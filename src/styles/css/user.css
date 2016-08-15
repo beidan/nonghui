@@ -223,4 +223,4 @@ header {
   display: block; }
 .userItem .logout {
   position: fixed;
-  bottom: 0; }
+  bottom: .5rem; }

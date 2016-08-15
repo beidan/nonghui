@@ -3,11 +3,11 @@
 @import "base/header";
 
 .btmNav {
-  @include height(4rem);
+  @include height(5rem);
   background: #f8f8f8;
   border-top: 1px #f2f2f2 solid;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   @include displayBox(box);
 
@@ -17,23 +17,22 @@
     text-align: center;
     border-right: 1px #f2f2f2 solid;
     color: white;
-    text-shadow:none;
+    text-shadow: none;
     border: none;
 
-
-    &:first-child{
-      background:#64ab5b;
+    &:first-child {
+      background: #64ab5b;
     }
 
     &:last-child {
-      background:#6bc75f;
+      background: #6bc75f;
     }
   }
 }
 
 .confirmAddr {
   background: #333;
-  padding: .6rem 3%;
+  padding: 1.5rem 3%;
   position: relative;
   overflow: hidden;
 
@@ -58,7 +57,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    line-height: 5.5rem;
+    line-height: 7.5rem;
     font-size: 1rem;
     color: #f4f4f4;
     background: rgba(255, 255, 255, .15);
@@ -107,4 +106,129 @@
     }
   }
 }
+$imgSize: 4.8rem;
+
+
+.cart {
+  background: white;
+  overflow: hidden;
+  margin: 0;
+
+  dt {
+    @include height(3.5rem);
+    border-bottom: 1px #d2d2d2 solid;
+    padding: 0 3%;
+
+    label input[type="checkbox"] {
+      margin-right: .1rem;
+      vertical-align: middle;
+    }
+
+    .edit {
+      float: right;
+      display: block;
+    }
+  }
+  dd {
+    overflow: hidden;
+    border-bottom: 1px #d2d2d2 dotted;
+    padding: 1rem 3%;
+    position: relative;
+    margin: 0;
+
+    .delBtn {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      width: 4rem;
+      padding: 1rem;
+      background: #31bd80;
+      color: white;
+      text-align: center;
+    }
+
+    input[type="checkbox"] {
+      float: left;
+      margin-right: .15rem;
+    }
+
+    .goodsPic {
+      width: $imgSize;
+      height: $imgSize;
+      float: left;
+
+      img {
+        height: $imgSize;
+      }
+    }
+  }
+  .goodsInfor {
+    margin-left: 6rem;
+
+    h4 {
+      margin: .8rem 0;
+      overflow: hidden;
+
+      a {
+        display: block;
+        color: grey;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        float: left;
+      }
+
+      span {
+        float: right;
+        color: #999;
+
+        &:before {
+          content: "x";
+        }
+      }
+    }
+
+    .numberWidget {
+      input[type="button"] {
+        width: 2rem;
+        height: 2rem;
+        background: none;
+        border: 1px #d2d2d2 solid;
+        color: grey;
+        outline: none;
+      }
+
+      input[type="number"] {
+        width: 3rem;
+        text-align: center;
+        background: none;
+        border: none;
+
+      }
+    }
+
+    .priceArea {
+      margin: 1rem 0;
+
+      strong {
+        color: #6aab60;
+        font-size: 1rem;
+        margin-right: 1rem;
+
+        &:before {
+          content: "￥";
+          font-size: .3rem;
+        }
+      }
+      del {
+        color: grey;
+
+        &:before {
+          content: "￥";
+        }
+      }
+    }
+  }
+}
+
 

@@ -8,27 +8,25 @@ app.controller('LoginController', function ($scope, $http, $location, getData, s
     $scope.submit = function () {
         getData.get(serviceURL.LoginUrl, {
             params: {
-                phone: $scope.userName,
-                password: $scope.userPsw,
+                phone: $scope.user.name,
+                password: $scope.user.psw
             }
-        })
-            .then(function (data) {
-                if (data.state === 0) {
-                    localStorage.setItem('loginState', 1);
-                    localStorage.setItem('user_data', JSON.stringify(data.user));
-                    localStorage.setItem('cartCount', JSON.stringify(data.cartCount));
-                    alert('登陆成功');
-                    console.log('login');
-                    $location.path('/index');
-                } else {
-                    console.log(data.errorMsg);
-                    alert(data.errorMsg);
-                    $scope.userName = '';
-                    $scope.userPsw = '';
-                }
-            }, function (data, status, headers, config) {
-                console.log('error!');
-            });
+        }).then(function (data) {
+            if (data.state === 0) {
+                localStorage.setItem('loginState', 1);
+                localStorage.setItem('user_data', JSON.stringify(data.user));
+                localStorage.setItem('cartCount', JSON.stringify(data.cartCount));
+                alert('登陆成功');
+                console.log('login');
+                $location.path('/index');
+            } else {
+                console.log(data.errorMsg);
+                alert(data.errorMsg);
+                $scope.user = '';
+            }
+        }, function (data, status, headers, config) {
+            console.log('error!');
+        });
     }
 
 

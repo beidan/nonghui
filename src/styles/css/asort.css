@@ -237,7 +237,7 @@ footer {
       width: 100%; }
     .contaniner .assort-cont dl {
       width: 100%;
-      margin-top: 5%;
+      margin-top: 0%;
       overflow: hidden; }
       .contaniner .assort-cont dl dt {
         font-size: 1.569rem;
@@ -263,27 +263,3 @@ footer {
           margin-right: 2%; }
         .contaniner .assort-cont dl dd:nth-child(odd) {
           margin-left: 2%; }
-
-.searchArea {
-  width: auto;
-  overflow: hidden;
-  position: relative; }
-  .searchArea input[type="text"] {
-    width: 100%;
-    padding: 1.2rem 1.3rem;
-    outline: none;
-    border: none; }
-  .searchArea input[type="button"] {
-    font-family: 'freshregular';
-    background: none;
-    border: none;
-    color: grey;
-    position: absolute;
-    right: 3%;
-    top: 23%;
-    outline: none;
-    font-size: .45rem; }
-  .searchArea .search {
-    position: absolute;
-    right: 10px;
-    top: 15px; }

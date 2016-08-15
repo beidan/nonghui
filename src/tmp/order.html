@@ -6,85 +6,39 @@
     </a>
     <span class="title">订单列表</span>
 </header>
-
-<aside class="orderSift">
-    <a class="currStyle">待付款</a>
-    <a>待发货</a>
-    <a>已完成</a>
-</aside>
-<ul class="orderList">
-    <li>
-        <dl>
-            <dt>
-                <span>订单：201512130108</span>
-                <span>待付款</span>
-            </dt>
-            <dd>
-                <h5>优质牛肉5kg散装</h5>
-                <strong>
-                    <em>0.00</em>
-                    <span>1</span>
-                </strong>
-            </dd>
-            <dd>
-                <h5>新疆葡萄干散装</h5>
-                <strong>
-                    <em>0.00</em>
-                    <span>1</span>
-                </strong>
-            </dd>
-            <dd>
-                <span>商品数量：<b>2</b></span>
-                <span>实付：<b>0.00</b></span>
-            </dd>
-            <dd>
-                <a class="order_delBtn">删除订单</a>
-                <a class="order_payBtn">付款</a>
-            </dd>
-        </dl>
-    </li>
-    <li>
-        <dl>
-            <dt>
-                <span>订单：201512130108</span>
-                <span>待发货</span>
-            </dt>
-            <dd>
-                <h5>优质牛肉5kg散装</h5>
-                <strong>
-                    <em>0.00</em>
-                    <span>1</span>
-                </strong>
-            </dd>
-            <dd>
-                <span>商品数量：<b>1</b></span>
-                <span>实付：<b>0.00</b></span>
-            </dd>
-            <dd>
-                <a class="order_payBtn">待发货</a>
-            </dd>
-        </dl>
-    </li>
-    <li>
-        <dl>
-            <dt>
-                <span>订单：201512130108</span>
-                <span>已完成</span>
-            </dt>
-            <dd>
-                <h5>优质牛肉5kg散装</h5>
-                <strong>
-                    <em>0.00</em>
-                    <span>1</span>
-                </strong>
-            </dd>
-            <dd>
-                <span>商品数量：<b>1</b></span>
-                <span>实付：<b>0.00</b></span>
-            </dd>
-            <dd>
-                <a class="order_delBtn">已完成</a>
-            </dd>
-        </dl>
-    </li>
-</ul>
+<div ng-controller="orderController" class="orderBox">
+    <aside class="orderSift">
+        <a class="currStyle">待付款</a>
+        <a>已取消</a>
+        <a>已完成</a>
+    </aside>
+    <ul class="orderList" ng-repeat="item in OrderData">
+        <li>
+            <dl>
+                <dt>
+                    <span>订单编号：{{::item.orders.id}}</span>
+                    <span>{{formatStatus(item.orders.status)}}</span>
+                </dt>
+                <dd ng-repeat="detail in item.orderProducts">
+                    <a href="#detail?id={{::detail.productId}}" class="goodsPic">
+                        <img ng-src="{{::detail.img}}" alt="shop img"/>
+                    </a>
+                    <h5>{{::detail.productName}}</h5>
+                    <strong>
+                        <em>{{::detail.productPrices}}</em>
+                        <span>{{::detail.count}}</span>
+                    </strong>
+                </dd>
+                <dd>
+                    <span>商品数量：<b>{{::item.orders.count}}</b></span>
+                    <span>实付：<b>{{::item.orders.prices}}</b></span>
+                </dd>
+                <dd>
+                    <a class="order_delBtn" ng-hide="{{isDelShow(item.orders.status)}}"
+                       ng-click="deleteOrder(item.orders.id)">删除订单</a>
+                    <a class="order_payBtn" ng-hide="{{isPayShow(item.orders.status)}}">付款</a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</div>

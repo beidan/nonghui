@@ -49,7 +49,7 @@ $green: #1ba91b;
     }
     dl {
       width: 100%;
-      margin-top: 5%;
+      margin-top: 0%;
       overflow: hidden;
 
       dt {
@@ -91,32 +91,32 @@ $green: #1ba91b;
   }
 }
 
-.searchArea {
-  width: auto;
-  overflow: hidden;
-  position: relative;
-
-  input[type="text"] {
-    width: 100%;
-    padding: 1.2rem 1.3rem;
-    outline: none;
-    border: none;
-  }
-  input[type="button"] {
-    font-family: 'freshregular';
-    background: none;
-    border: none;
-    color: grey;
-    position: absolute;
-    right: 3%;
-    top: 23%;
-    outline: none;
-    font-size: .45rem;
-  }
-
-  .search {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-  }
-}
+//.searchArea {
+//  width: auto;
+//  overflow: hidden;
+//  position: relative;
+//
+//  input[type="text"] {
+//    width: 100%;
+//    padding: 1.2rem 1.3rem;
+//    outline: none;
+//    border: none;
+//  }
+//  input[type="button"] {
+//    font-family: 'freshregular';
+//    background: none;
+//    border: none;
+//    color: grey;
+//    position: absolute;
+//    right: 3%;
+//    top: 23%;
+//    outline: none;
+//    font-size: .45rem;
+//  }
+//
+//  .search {
+//    position: absolute;
+//    right: 10px;
+//    top: 15px;
+//  }
+//}

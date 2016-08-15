@@ -106,14 +106,19 @@ app.factory('getData', function ($http, $q) {
         'LogoutUrl': service + 'logOut',
         'BuyGoodUrl': service + 'buyGood',
         'MyCartUrl': service + 'myCart',
-        'IndexSwiperUrl' : service + 'getImage',
+        'IndexSwiperUrl': service + 'getImage',
         'RemoveGoodUrl': service + 'removeGood',
-        'AddCountUrl' : service +'addCount',
-        'SubCountUrl':service + 'subCount',
-        'AddAddressUrl':service + 'addAddress',
-        'CreateOrderUrl' : service + 'CreateOrder',
-        'CateUrl':service + 'Cate',
-        'FindProductUrl':service +'findProduct'
+        'AddCountUrl': service + 'addCount',
+        'SubCountUrl': service + 'subCount',
+        'CateUrl': service + 'Cate',
+        'FindProductUrl': service + 'findProduct',
+        'GetAddressUrl': service + 'getAddress',
+        'AddAddressUrl': service + 'addAddress',
+        'UpdateAddressUrl': service + 'updateAddress',
+        'CreateOrderUrl': service + 'CreateOrders',
+        'ListOrdersUrl': service + 'listOrders',
+        'UpdateStatusUrl': service + 'updateStatus',
+        'DeleteOrdersUrl': service + 'deleteOrders'
     }
     /*本地接口*/
     // return localUrls = {
@@ -127,10 +132,10 @@ app.factory('getData', function ($http, $q) {
 }).factory('SortDatas', function () {
 
     return SortDatas = [
-        {name: '水果', imgsrc: "src/img/index/menu_bg_01.png",value :'fruits'},
-        {name: '种子', imgsrc: "src/img/index/menu_bg_14.png",value :'seed'},
-        {name: '肥料', imgsrc: "src/img/index/menu_bg_07.png",value :'fertilizer'},
-        {name: '蔬菜', imgsrc: "src/img/index/menu_bg_15.png",value :'vegetables'},
+        {name: '水果', imgsrc: "src/img/index/menu_bg_01.png", value: 'fruits'},
+        {name: '种子', imgsrc: "src/img/index/menu_bg_14.png", value: 'seed'},
+        {name: '肥料', imgsrc: "src/img/index/menu_bg_07.png", value: 'fertilizer'},
+        {name: '蔬菜', imgsrc: "src/img/index/menu_bg_15.png", value: 'vegetables'},
     ]
 });
 // {name: '餐厨用品', imgsrc: "src/img/index/menu_bg_11.png"},
