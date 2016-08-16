@@ -27,8 +27,6 @@ var Slider = function () {
             /*当前图片的索引*/
             this.idx = 0;
             this.renderDOM();
-
-            this.lis = this.outer.getElementsByTagName('li');
             this.bindDOM();
         }
 
@@ -37,42 +35,22 @@ var Slider = function () {
     }, {
         key: 'renderDOM',
         value: function renderDOM() {
-            var wrap = this.wrap,
-                data = this.list,
-                i = 0,
-                html = [];
-            this.outer = document.createElement('ul');
+            var data = this.list,
+                i = void 0,
+                len = data.length;
 
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
+            this.outer = this.wrap.getElementsByTagName('ul');
 
-            try {
-                for (var _iterator = data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var val = _step.value;
+            this.lis = this.outer[0].querySelectorAll('li');
 
-                    if (val) {
-                        html.push('<li style="transform: translate3d(' + i * this.scaleW + 'px ,0,0)">\n                    <img src="' + val['imageUrl'] + '" alt="img" width="' + window.innerWidth + 'px" height="180px" />\n                  </li>');
-                    }
-                    i++;
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator.return) {
-                        _iterator.return();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
+            for (i = 0; i < len; i++) {
+
+                if (this.lis[i]) {
+                    this.lis[i].style.webkitTransform = 'translate3d(' + i * this.scaleW + 'px ,0,0)';
+                    var image = this.lis[i].querySelector('img');
+                    image.src = '' + data[i]['imageUrl'];
                 }
             }
-
-            this.outer.innerHTML = html.join('');
-            wrap.appendChild(this.outer);
         }
     }, {
         key: 'goIndex',
@@ -125,7 +103,7 @@ var Slider = function () {
             var _this = this;
 
             var scaleW = this.scaleW,
-                outer = this.outer;
+                outer = this.outer[0];
 
             var startHandle = function startHandle(evt) {
                 /*记录刚开始按下的时间*/

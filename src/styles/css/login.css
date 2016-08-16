@@ -217,7 +217,8 @@ header {
       border: none;
       text-indent: 6.5rem; }
     .formarea li input {
-      outline: none; }
+      outline: none;
+      line-height: normal; }
     .formarea li:last-child {
       background: none; }
     .formarea li select {

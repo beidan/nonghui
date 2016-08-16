@@ -12,27 +12,37 @@ var 
     notify = require('gulp-notify'),//提示信息
     obfuscate = require('gulp-obfuscate'), //混淆js
     sass = require('gulp-ruby-sass');
-// var browserSync = require('browser-sync').create();  //自动同步
+var browserSync = require('browser-sync').create();  //自动同步
+// var rev = require('gulp-rev'); //对文件名加md5后缀
+// var revCollector = require('gulp-rev-collector');//路径替换
 
+
+// gulp.task('concat', function () {
+//     gulp.src(['./src/resume.css'])
+//         .pipe(rev())      //md5命名
+//         .pipe(gulp.dest('./dist'))
+//         .pipe(rev.manifest())    //生成一个json文件
+//         .pipe(gulp.dest('./rev'));
+// });
 
 // // 自动同步
-// gulp.task('browser-sync',function () {
-//     var files = [
-//         '**/*.html',
-//         '**/*.css',
-//         '**/*.js'
-//     ];
-// //代理模式（本地服务器）
-//     browserSync.init(files,{
-//         proxy: 'http://localhost:63342/nonghui/extend.html',
+gulp.task('browser-sync',function () {
+    var files = [
+        '**/*.html',
+        '**/*.css',
+        '**/*.js'
+    ];
+//代理模式（本地服务器）
+    browserSync.init(files,{
+        proxy: 'http://localhost:63342/nonghui/extend.html?_ijt=mbsim603vr9dpgk578va7ulkfm#/index',
+    });
+//本地静态文件
+//     browserSync.init(files, {
+//         server: {
+//             baseDir: './src'   //该路径到html的文件夹目录
+//         }
 //     });
-// //本地静态文件
-// //     browserSync.init(files, {
-// //         server: {
-// //             baseDir: './src'   //该路径到html的文件夹目录
-// //         }
-// //     });
-// });
+});
 
 // 压缩html,清除html注释
 gulp.task('html', function() {
@@ -92,7 +102,7 @@ gulp.task('watch', function() {
 
 // 默认任务
 gulp.task('default', function(){
-    gulp.run('sass','js','watch');
+    gulp.run('sass','js','browser-sync','watch');
 
     // Watch .scss files
 
