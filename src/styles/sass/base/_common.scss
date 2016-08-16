@@ -15,6 +15,7 @@
   -webkit-box-flex: $value;
   -moz-box-flex: $value;
 }
+
 @mixin displayBox($value) {
   display: $value;
   display: -webkit-#{$value};
@@ -26,7 +27,8 @@
   -moz-appearance: $value;
   -webkit-appearance: $value;
 }
-@mixin scaleX($value){
+
+@mixin scaleX($value) {
   transform: scaleX($value);
   -webkit-transform: scaleX($value);
   -moz-transform: scaleX($value);
@@ -45,13 +47,14 @@
 .fr {
   float: right;
 }
-.hide{
+
+.hide {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }
-
 
 /*超出显示……*/
 .ellipsis {
@@ -77,8 +80,7 @@
 $themeColor: #31bd80;
 $themeHoverColor: #53ab48;
 
-
-.button{
+.button {
   width: 100%;
   @include height(3.8rem);
   background: $themeColor;
@@ -91,7 +93,7 @@ $themeHoverColor: #53ab48;
   &:active {
     background: $themeHoverColor;
   }
-  &:focus{
+  &:focus {
     border: none;
     outline: none;
   }
