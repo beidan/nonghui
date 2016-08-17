@@ -7,7 +7,17 @@
  *
  * */
 
-app.controller('DetailController', function ($scope, $location, getData, serviceURL) {
+app.controller('DetailController', function ($scope, $location, getData, serviceURL,isLogin) {
+    /*判断是否登录*/
+    var sta = isLogin.isLogin();
+
+    if (sta.state == 0) {
+        $scope.content = 0;
+    }
+    else {
+        $scope.content = sta.content;
+    }
+
     getData.get(serviceURL.DetailUrl, {
         params: {
             id: $location.search().id
@@ -23,15 +33,7 @@ app.controller('DetailController', function ($scope, $location, getData, service
     }, function (data, status, headers, config) {
         console.log('error!');
     });
-    /*判断是否登录*/
-    var isLogin = localStorage.getItem('loginState');
-    var cartCount = localStorage.getItem('cartCount');
-    if (isLogin == 0 || isLogin == null) {
-        $scope.cartCount = 0;
-    }
-    else {
-        $scope.cartCount = parseInt(cartCount);
-    }
+
 
     function Silder(list) {
         new Slider({

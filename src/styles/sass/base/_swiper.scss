@@ -10,7 +10,9 @@
 #canvas ul {
   height:180px;
   position: absolute;
-  width: 100%;
+  //min-width: 360px;
+  //max-width: 412px;
+  width:100%;
 }
 
 #canvas li {

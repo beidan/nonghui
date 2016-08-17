@@ -1,13 +1,15 @@
-app.controller('CartController', function ($scope, isLogin, getData, serviceURL) {
+app.controller('CartController', function ($scope, $location,isLogin, getData, serviceURL) {
+    /*判断是否登录*/
+    var sta = isLogin.isLogin();
+    if (sta.state == 0) {
+        $location.path('/login');
+    }
 
-    isLogin.isLogin();
-
-    var userData = JSON.parse(localStorage.getItem('user_data'));
     // /*获取购物车数据*/
-    if(userData !== null){
+    if(sta.state == 1){
         getData.get(serviceURL.MyCartUrl, {
             params: {
-                userId: userData.id,
+                userId: sta.userId,
             }
         }).then(function (data) {
             $scope.items = data.orderProducts;

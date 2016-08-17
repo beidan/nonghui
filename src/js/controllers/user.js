@@ -1,5 +1,11 @@
 app.controller('userController', function ($scope, $location, serviceURL, getData, isLogin) {
-    isLogin.isLogin();
+    /*判断是否登录*/
+    var sta = isLogin.isLogin();
+
+    if (sta.state == 0) {
+        $location.path('/login');
+    }
+
     var userData = JSON.parse(localStorage.getItem('user_data'));
 
     /*获取数据渲染页面*/

@@ -46,7 +46,7 @@ app.factory('getData', function ($http, $q) {
                     console.log(json.result.formatted_address);
                 }
             },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            error: function () {
                 console.log('地址位置获取失败!');
             }
         });
@@ -55,16 +55,16 @@ app.factory('getData', function ($http, $q) {
     function showError(error) {
         switch (error.code) {
             case error.PERMISSION_DENIED:
-                alert("定位失败,用户拒绝请求地理定位");
+                console.log("定位失败,用户拒绝请求地理定位");
                 break;
             case error.POSITION_UNAVAILABLE:
-                alert("定位失败,位置信息是不可用");
+                console.log("定位失败,位置信息是不可用");
                 break;
             case error.TIMEOUT:
-                alert("定位失败,请求获取用户位置超时");
+                console.log("定位失败,请求获取用户位置超时");
                 break;
             case error.UNKNOWN_ERROR:
-                alert("定位失败,定位系统失效");
+                console.log("定位失败,定位系统失效");
                 break;
         }
     }
@@ -82,13 +82,29 @@ app.factory('getData', function ($http, $q) {
 
 
 }).factory('isLogin', function ($location) {
+    /*判断是否登录,
+    * 已登录--  处理购物车数量   state=1
+    * 未登录--  跳转页面  state=0
+    * */
     return {
         isLogin: function () {
-            var isLogin = localStorage.getItem('loginState');
+            var cartCount = localStorage.getItem('cartCount');
+            var isLogin = localStorage.getItem('loginState') || 0;
+            var userData = JSON.parse(localStorage.getItem('user_data'));
+
             /*未登录*/
-            if (isLogin == 0 || isLogin == null) {
-                console.log('not login');
-                $location.path('/login');
+            if (isLogin == 0 && userData == null) {
+                return {
+                    state: '0',
+                    content: 0,
+                };
+            }
+            else {
+                return {
+                    state: '1',
+                    content: parseInt(cartCount),
+                    userId: userData.id
+                };
             }
         }
     }
