@@ -12,43 +12,23 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
-    <!--lib-->
     <link rel="stylesheet" href="src/lib/font-awesome/font-awesome.css"/>
-
+    <link rel="stylesheet" href="./dest/css/main.min.css"/>
 
 </head>
 <body>
 
-<div ng-view></div>
+<div ng-cloak class="ng-cloak">
+    <div ng-view></div>
+</div>
 
-
-<!--lib-->
-<!--<script src="src/lib/angular/angular.min.js"></script>-->
 <script src="src/lib/angular/angular.js"></script>
-
 <script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
-<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
 <!--swiper-->
 <script src="src/lib/ownSwiper/ownSwiper.js?v=1.11"></script>
-<!--angular-->
-<script src="src/js/route.js"></script>
-<script src="src/js/services/services.js"></script>
-<script src="src/js/directive/directive.js"></script>
 
-<!--controller-->
-<script src="src/js/controllers/index.js"></script>
-<script src="src/js/controllers/detail.js"></script>
-<script src="src/js/controllers/cart.js"></script>
-<script src="src/js/controllers/login.js"></script>
-<script src="src/js/controllers/register.js"></script>
-<script src="src/js/controllers/asort.js"></script>
-<script src="src/js/controllers/citypick.js"></script>
-<script src="src/js/controllers/address.js"></script>
-<script src="src/js/controllers/user.js"></script>
-<script src="src/js/controllers/userName.js"></script>
-<script src="src/js/controllers/confirm_order.js"></script>
-<script src="src/js/controllers/search.js"></script>
-<script src="src/js/controllers/order.js"></script>
+<script src="./dest/js/main.js"></script>
 
 </body>
 </html>

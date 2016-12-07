@@ -66,6 +66,7 @@ gulp.task('html', function() {
 // 合并、压缩、重命名css
 gulp.task('css', function() {
     return gulp.src('src/styles/css/*.css')
+        .pipe(concat('main.css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
         .pipe(gulp.dest('dest/css'))
@@ -75,12 +76,14 @@ gulp.task('css', function() {
 // 混淆压缩js文件
 gulp.task('js', function() {
     return gulp.src('src/js/**/*.js')
-        .pipe(obfuscate())
-        .pipe(uglify())
+        .pipe(concat('main.js'))
         .pipe(gulp.dest('dest/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(notify({ message: 'js task ok' }));
 });
+
+// .pipe(obfuscate())
+//     .pipe(uglify())
 
 //编译scss
 gulp.task('sass', function () {
@@ -96,8 +99,6 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', ['js']);
 
 });
-
-
 
 
 // 默认任务

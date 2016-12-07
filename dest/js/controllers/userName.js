@@ -1,1 +1,0 @@
-app.controller("userNameController",function(_,e){var o=JSON.parse(localStorage.getItem("user_data"));o&&(_.ಠ_ಠ1022=o.img,_.ಠ_ಠ1023=o.ಠ_ಠ1023,_.ಠ_ಠ1025=o.ಠ_ಠ1025,_.ಠ_ಠ1026=o.ಠ_ಠ1026,_.ಠ_ಠ1027=o.ಠ_ಠ1027,_.ಠ_ಠ1028=o.ಠ_ಠ1028),_.ಠ_ಠ979=function(){console.log("ee")}});
